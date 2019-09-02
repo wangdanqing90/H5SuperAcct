@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<!--#include file = "/view/layout/head-script.html" -->
+		<link href="/css/register.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="div-actionBar">
+			<img src="/img/externalDocking/back.png" class="img-goBack">
+			<span>注册中民超级会员</span>
+		</div>
+		<div class="body">
+
+			<form action="#" class="form-horizontal" method="post" id="validation-reg" name='validation-reg' role="form" novalidate="novalidate" autocomplete="off">
+				<div class="div-register">
+					<div class="div-mobil-input">
+						<div class="row margin-left-0 margin-right-0 div-input-group">
+							<div class="col-xs-1 padding-left-0 padding-right-0 text-center">
+								<img src="/img/externalDocking/mobile.png" style="margin-top:8px;width: 14px;">
+							</div>
+							<div class="col-xs-11  padding-left-0">
+								<input type="text" placeholder="请输入手机号码" name="mobile" id="mobile">
+							</div>
+						</div>
+					</div>
+					<div class="div-mobil-input margin-top-30">
+						<div class="row margin-left-0 margin-right-0 div-input-group">
+							<div class="col-xs-1 padding-left-0 padding-right-0 text-center">
+								<img src="/img/externalDocking/User.png" style="margin-top:12px;width: 14px;">
+							</div>
+							<div class="col-xs-11  padding-left-0">
+								<input type="text" placeholder="用户名为字母开头的4-20位字母或数字" name="username" id="username">
+							</div>
+						</div>
+					</div>
+					<div class="div-mobil-input margin-top-40">
+						<div class="row margin-left-0 margin-right-0 div-input-group">
+							<div class="col-xs-1 padding-left-0 padding-right-0 text-center">
+								<img src="/img/externalDocking/key.png" style="margin-top:12px;width: 14px;">
+							</div>
+							<div class="col-xs-11  padding-left-0">
+								<input type="text" class="input-register" placeholder="请输入登录密码" name="password" id="password" autocomplete="off" onfocus="this.type='password'">
+							</div>
+						</div>
+					</div>
+					<div class="div-mobil-input margin-top-30">
+						<div class="row  div-input-group  margin-left-0 margin-right-0">
+							<div class="col-xs-1 padding-left-0 padding-right-0 text-center">
+								<img src="/img/externalDocking/phone.png" style="margin-top:14px;">
+							</div>
+							<div class="col-xs-7  padding-left-0">
+								<input type="text" class="input-register" placeholder="请输入短信验证码" name="yzm" id="yzm" oninput="if(value.length>6)value=value.slice(0,6)">
+							</div>
+							<div class="col-sm-4 col-xs-4 padding-left-0 padding-right-0 ">
+								<input type="button" id="mobileCodeBtn" style="border: none;background: none;outline: none;color: #2b8fea;" value="获取验证码" />
+
+								<!-- <a href="javascript:void(0);" id="mobileCodeBtn">获取验证码</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="div-mobil-input margin-top-30">
+						<div class="row margin-left-0 margin-right-0  div-input-group">
+							<div class="col-xs-1 padding-left-0 padding-right-0 text-center">
+								<img src="/img/externalDocking/User.png" style="margin-top:12px;width: 14px;">
+							</div>
+							<div class="col-xs-11 padding-left-0">
+								<input type="text" class="input-register" placeholder="推荐人（选填）" name="manageid" id="manageid">
+							</div>
+						</div>
+					</div>
+					<div class="margin-top-30">
+						<!--<input type="checkbox"  id="input-agree">--><img id="input-agree" style="width: 14px;vertical-align: -2px;" src="/img/externalDocking/checked-1.png" alt="" /> 我已阅读并接受
+						<a href="javascript:void(0)" data-toggle="modal" data-target="#agree_modal">中民超级会员平台服务协议</a>
+					</div>
+					<div class="margin-top-30">
+						<input type="button" class="btn btn-default div-btn" style="color: #fff;" value="立即注册" id="registerBtn" disabled="disabled">
+					</div>
+					<div class="margin-top-10">
+						已是会员？
+						<a href="/view/account/login.html">点击登录</a>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="agree_modal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">中民超级会员平台服务协议</h4>
+					</div>
+					<div class="modal-body" style="overflow-y:auto">
+						<div class="agreement-content" style="height:500px;">
+							<div class="WordSection1">
+
+								<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-size:13.5pt;,sans-serif;color:black">中民超级会员平台服务协议</span></b></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-size:13.5pt;,sans-serif;color:black">前言</span></b></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">1. </span><span style="font-size:13.5pt;,sans-serif;color:black">“中民超级会员”依照国家法律法规和行业规范设立和运营的互联网平台（以下简称“中民超级会员”或“平台”或“本平台”），向平台用户（以下简称“用户”）依法提供各项服务，具体服务内容以平台当时提供的服务内容为准。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">2. </span><span style="font-size:13.5pt;,sans-serif;color:black">《中民超级会员平台服务协议》（以下称“本协议”）双方为平台与平台用户。中民超级会员在此特别提醒用户在注册并使用本协议项下平台所提供的服务前，应当审慎阅读并充分理解本协议的全部条款，特别是其中所涉及的免除及限制中民超级会员责任的条款、对用户权利限制的条款等。用户勾选“我已阅读并接受《中民超级会员平台服务协议》”并点击“立即注册”按钮的，即视为您已充分理解并同意接受本协议的全部内容。自用户完成注册时起，本协议即在用户与中民超级会员之间产生法律效力，如有违反而导致任何法律后果，用户将以自己的名义独立承担相应的法律责任。如您不接受本协议全部或部分条款的，请立即停止注册，您将无权使用本协议下平台提供的服务。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">3. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户在此确认知悉并同意中民超级会员有权根据需要不时修改、增加或删减本协议中的内容。中民超级会员将在本平台上发布最新的协议，一经平台公告，即视为上述内容已经通知到用户。若用户在本协议及各类规则变更后继续使用平台服务的，视为用户已认真阅读、充分理解并完全接受修改后的协议内容及各类规则，并愿意遵照修改后的协议内容执行。<b>中民超级会员保留随时中止、终止或限制用户资格，随时中断或终止部分或全部对用户服务的权利，因此而造成的任何损失，中民超级会员无需对用户或任何第三方承担任何责任，同时该等中止、终止或限制行为并不豁免用户已经进行的交易下所应承担的责任和义务。</b></span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-size:13.5pt;,sans-serif;color:black">第一条 用户注册</span></b></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">1. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户在注册并使用中民超级会员提供的平台服务时，应当确认具备中华人民共和国法律规定的与其行为相适应的民事行为能力，并承诺按平台的要求提供真实、准确、完整、有效的用户信息。如上述信息有变更，用户应按照平台的要求及时进行更新。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">2. </span><span style="font-size:13.5pt;,sans-serif;color:black">因本平台用户通过中民超级会员平台点击链接跳转到的本平台子网站、合作平台、网站（以下称“跳转网站”），<b>用户应知悉并同意其在本平台上已注册的用户账户作为跳转网站的共用账户，即用户知悉并同意其在平台注册的用户账户同样可用于登录跳转网站并使用跳转网站的相关网站服务，用户无须在跳转网站另行申请用户名并设置密码。</b></span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">3. </span><span style="font-size:13.5pt;,sans-serif;color:black">通过中民超级会员平台点击的跳转网站提供服务的主体系中民超级会员的合作方公司主体及中民超级会员因提供本协议项下各种服务必要开展合作的主体（以下统称“合作方”）。跳转网站所提供的产品与服务由合作方自行负责，中民超级会员会在跳转网站下方标明所提供服务的合作方名称，敬请用户自行查阅、辨别及判断。用户无权要求中民超级会员就合作方提供的产品或服务承担任何责任。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-size:13.5pt;,sans-serif;color:black">第二条 用户承诺</span></b></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">1. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户使用平台服务，应当：<span lang="EN-US"><br>
+&nbsp;1.1</span>遵守中国有关法律和法规；<span lang="EN-US"><br>
+&nbsp;1.2</span>遵守平台发布的所有协议、规则、规定、程序和惯例；<span lang="EN-US"><br>
+&nbsp;1.3</span>不得为任何非法目的或以任何非法方式而使用平台服务；<span lang="EN-US"><br>
+&nbsp;1.4</span>不得利用平台服务从事任何侵害他人权益或违法行为，包括但不限于：<span lang="EN-US"><br>
+&nbsp;1.4.1</span>反对宪法所确定的基本原则，危害国家安全、泄露国家秘密、颠覆国家政权、破坏国家统一的；<span lang="EN-US"><br>
+&nbsp;1.4.2</span>不合理地使用平台的信息以及从平台获得的他人的信息，侵害他人的名誉、隐私、商业秘密、商标权、著作权、专利权等权利的；<span lang="EN-US"><br>
+&nbsp;1.4.3</span>在平台上传、展示或传播虚假的、骚扰性的、中伤他人的、辱骂性的、恐吓性的、庸俗淫秽的或其他任何非法的信息；<span lang="EN-US"><br>
+&nbsp;1.4.4</span>进行非法集资、洗钱、信用卡套现、传销等违法违规行为的；<span lang="EN-US"><br>
+&nbsp;1.4.5</span>从事任何可能含有电脑病毒或是可能侵害平台服务系统、资料等行为的；<span lang="EN-US"><br>
+&nbsp;1.4.6</span>通过平台发布违法或破坏性的信息，干扰平台系统的正常运行，利用平台服务系统进行可能对网络的正常运转造成不利影响之行为的；<span lang="EN-US"><br>
+&nbsp;1.4.7</span>侵犯中民超级会员的商业利益，包括但不限于发布非经中民超级会员许可的商业广告的。<span lang="EN-US"><br>
+&nbsp;1.4.8</span>其他经中民超级会员合理判断而有正当理由认为不适当的行为的。</span>
+								</p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">2. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户需独立对自己在本平台的行为承担法律责任。若用户的行为不符合其上述承诺，中民超级会员有权做出独立判断立即停止提供服务。若用户因违反承诺所导致的一切后果均由其自行独立承担，如对中民超级会员或其他第三方造成损害的，用户应对中民超级会员的损失承担赔偿责任；如因用户的行为导致中民超级会员对第三方承担责任（包括但不限于连带责任）的，中民超级会员有权向用户进行追偿。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-size:13.5pt;,sans-serif;color:black">第三条 服务费用</span></b></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">1. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户同意，用户使用平台服务的，中民超级会员有权向用户收取服务费，用户应按要求支付。各项服务费用详见用户接受服务时平台公示之收费说明。用户知悉并确认，中民超级会员保留单方面制定及调整服务费用的权利。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">2. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户在使用本服务过程中可能需要向第三方（如银行或第三方支付公司等）支付一定的费用，具体收费标准详见第三方网站相关页面或中民超级会员平台的提示。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-size:13.5pt;,sans-serif;color:black">第四条 风险提示</span></b></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">1. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户了解并认可，任何通过中民超级会员进行的交易并不能避免以下风险的产生，中民超级会员不会也没有义务为如下风险负责：<span lang="EN-US"><br>
+&nbsp;1.1</span>宏观经济风险：因宏观经济形势变化，可能引起交易等方面的异常波动，用户有可能遭受损失；<span lang="EN-US"><br>
+&nbsp;1.2</span>政策风险：有关法律、法规及相关政策、规则发生变化，可能引起交易等方面异常波动，用户有可能遭受损失；<span lang="EN-US"><br>
+&nbsp;1.3</span>违约风险：因其他交易方无力或无意愿按时足额履约，用户有可能遭受损失；<span lang="EN-US"><br>
+&nbsp;1.4</span>投资风险<span lang="EN-US">: </span>因相关投资本身所造成的产品本金和收益的风险；<span lang="EN-US"><br>
+&nbsp;1.5</span>不可抗力因素导致的风险；<span lang="EN-US"><br>
+&nbsp;1.6</span>因用户的过错导致的任何损失，该过错包括但不限于：决策失误、操作不当、遗忘或泄露密码、密码被他人破解、用户使用的计算机系统被第三方侵入、用户委托他人代理交易时他人恶意或不当操作而造成的损失；<span lang="EN-US"><br>
+&nbsp;1.7</span>合作方所提供的产品与服务对用户造成的任何损失。</span>
+								</p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">2. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户同意，基于互联网的特殊性，中民超级会员不保证本平台服务不会中断，也不保证本平台服务的及时性和<span lang="EN-US">/</span>或安全性。系统因非因本平台原因无法正常运作，使用户无法使用本平台服务或造成损失的，中民超级会员对用户或第三方不承担任何责任，前述状况包括但不限于：<span lang="EN-US"><br>
+&nbsp;2.1</span>中民超级会员系统停机维护期间；<span lang="EN-US"><br>
+&nbsp;2.2</span>因电信设备出现故障等原因无法进行数据传输的；<span lang="EN-US"><br>
+&nbsp;2.3</span>由于黑客攻击、网络供应商技术调整或故障、网站升级、银行端的问题等原因而造成的服务中断或延迟；<span lang="EN-US"><br>
+&nbsp;2.4</span>因台风、地震、海啸、洪水、停电、战争、恐怖袭击等不可抗力之因素，造成中民超级会员系统障碍不能执行业务的；<span lang="EN-US"><br>
+&nbsp;2.5</span>其他无法预见、无法避免、无法克服的第三方原因。</span>
+								</p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">3. </span><span style="font-size:13.5pt;,sans-serif;color:black">以上并不能揭示用户通过中民超级会员进行交易的全部风险及市场的全部情形。用户在做出交易决策前，应全面了解相关交易，谨慎决策，并自行承担全部风险。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-size:13.5pt;,sans-serif;color:black">第五条 知识产权及商业秘密</span></b></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">1. </span><span style="font-size:13.5pt;,sans-serif;color:black">平台上的所有内容，包括但不限于文字、数据、设计、软件、声音、图片、录像、图表、广告、电子邮件的全部内容以及中民超级会员为用户提供的其他信息，均由中民超级会员或其他权利人依法享有知识产权。用户未经中民超级会员和相关权利人的授权，不得擅自以复制、修改、发布、转载、播放、改编、汇编或以其他方式使用这些内容或将该等内容用于其他任何商业目的。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">2. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户在平台范围内或利用本平台不当使用他人的知识产权的，中民超级会员对此不承担任何责任。用户侵犯他人知识产权的，视为违反本协议，由此造成中民超级会员及本平台的声誉受损或造成其他损失的，中民超级会员有权要求用户承担责任。因用户侵犯他人知识产权导致中民超级会员对第三方承担责任的，中民超级会员有权向用户进行追偿。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">3. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户因使用平台、参与平台项目或其他与平台相关的活动而获取的中民超级会员、平台合作方或平台其他用户的商业秘密的，不得泄露给任何第三方并不得占有使用或授权他人使用该等商业秘密。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-size:13.5pt;,sans-serif;color:black">第六条 隐私权保护及授权条款</span></b></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">1. </span><span style="font-size:13.5pt;,sans-serif;color:black">中民超级会员对于用户提供的、中民超级会员自行收集的、经认证的个人信息将按照本协议予以保护、使用或者披露。中民超级会员无需用户事先同意即可向中民超级会员关联实体转让与中民超级会员平台有关的全部或部分权利。如中民超级会员转让本协议项下全部或部分义务，应将该转让事宜在本平台进行公布或以其他方式告知用户，如用户继续使用本平台提供的法律服务的，则视为用户同意该转让事宜。未经中民超级会员事先书面同意，用户不得转让其在本协议项下的任何权利和义务。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">2. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户同意，中民超级会员可通过合法途径渠道来源收集用户的额外资料，以更好地掌握用户情况，并为用户度身订造相应服务、解决争议并有助确保在平台进行安全交易。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">3. </span><span style="font-size:13.5pt;,sans-serif;color:black">中民超级会员可按照用户在平台上的行为自动追踪关于用户的某些资料。在不泄露用户的隐私资料的前提下，中民超级会员有权对整个用户数据库进行分析并对用户数据库进行商业上的利用。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">4. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户同意，中民超级会员可在平台的某些网页上使用诸如“<span lang="EN-US">Cookies</span>”的资料收集装置。</span>
+								</p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">5. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户同意，中民超级会员可使用关于用户的相关资料（包括但不限于中民超级会员持有的有关用户档案中的资料，中民超级会员从用户目前及以前在平台上的活动所获取的其他资料以及中民超级会员通过其他合法方式自行收集的资料）以解决争议、对纠纷进行调停。用户同意中民超级会员可通过人工或自动程序对用户的资料进行评价。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">6. </span><span style="font-size:13.5pt;,sans-serif;color:black">中民超级会员采用相关法律规定及行业标准惯例以保护用户的资料。用户因履行本协议提供给中民超级会员的信息，中民超级会员不会出售或非法向任何第三方提供。<b>用户同意并授权，中民超级会员可将用户信息提供给以下主体使用：</b><span lang="EN-US"><br>
+&nbsp;</span>（<span lang="EN-US">1</span>）<b> 提供独立服务且仅要求服务相关的必要信息的供应商，如印刷厂、邮递公司等；</b><span lang="EN-US"><br>
+&nbsp;</span>（<span lang="EN-US">2</span>）<b> 具有合法调阅信息权限并从合法渠道调阅信息的政府部门或其他机构，如公安机关、法院；</b><span lang="EN-US"><br>
+&nbsp;</span>（<span lang="EN-US">3</span>）<b> 中民超级会员的关联实体；</b><span lang="EN-US"><br>
+&nbsp;</span>（<span lang="EN-US">4</span>）<b> 经平台或平台授权代表同意的第三方。</b></span>
+								</p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">7. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户授权中民超级会员，除法律另有规定之外，基于为用户提供更优质服务和产品的目的，向合作方提供、查询、收集用户的信息。为确保用户信息的安全，中民超级会员及其合作方对上述信息负有保密义务，并采取必要合理措施保证信息安全。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">8. </span><span style="font-size:13.5pt;,sans-serif;color:black">本条款自本协议签署时生效，具有独立法律效力，不受合同成立与否及效力状态变化的影响。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-size:13.5pt;,sans-serif;color:black">第七条 免责条款</span></b></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">1. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户同意对因其在平台上进行交易，并使用中民超级会员所提供服务而产生的一切后果承担全部风险，中民超级会员对用户不作任何类型的承诺或担保。中民超级会员不承诺其所提供的服务一定符合用户的要求，也不承诺该种服务的及时性、安全性、准确性、连续性。对于因不可抗力或中民超级会员不能避免或控制的原因造成的网络服务中断或其它缺陷，中民超级会员不承担任何责任，但将尽力减少因此而给用户造成的损失和影响。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">2. </span><span style="font-size:13.5pt;,sans-serif;color:black">中民超级会员不对平台的合作方所提供的产品与服务或平台上任何其他第三方行为进行承诺或担保，如合作方或该第三方的任何产品、服务或行为对用户产生了不利影响，用户应自行与该合作方或第三方协商解决，中民超级会员不承担任何责任。即使该合作方或第三方是由本平台推荐的，用户亦应自行判断其风险作出选择并承担一切后果。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">3. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户同意保障和维护中民超级会员及其他用户的利益，如因用户违反有关法律、法规或本协议的任何条款而给中民超级会员或任何其他第三人造成损失，用户自行承担由此造成的损害赔偿责任。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-size:13.5pt;,sans-serif;color:black">第八条 通知</span></b></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">1. </span><span style="font-size:13.5pt;,sans-serif;color:black">对于本协议项下的各项通知，中民超级会员有权以网站公示、向用户的账户、电子邮箱和手机号码发送信息、拨打用户预留的电话号码、通过用户预留的住址寄送快递、挂号信或通过互联网即时通讯工具（如<span lang="EN-US">QQ</span>、微信等）的方式发送。</span>
+								</p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">2. </span><span style="font-size:13.5pt;,sans-serif;color:black">通知在下列日期视为送达：<span lang="EN-US"><br>
+&nbsp;2.1</span>以公式方式作出的，在平台网站公示时即为有效送达。<span lang="EN-US"><br>
+&nbsp;2.2</span>向用户账户、电子邮箱和手机号码发送信息的，发送成功即为有效送达。<span lang="EN-US"><br>
+&nbsp;2.3</span>以拨打电话的方式作出的，通知作出之时即为有效送达。<span lang="EN-US"><br>
+&nbsp;2.4</span>以挂号信（付清邮资）发出的通知，在寄出（以邮戳为凭）后的五个工作日内为有效送达。<span lang="EN-US"><br>
+&nbsp;2.5</span>以特快专递（付清邮资）发出的通知，在寄出（以邮戳为凭）后的三个工作日内为有效送达。</span>
+								</p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">3. </span><span style="font-size:13.5pt;,sans-serif;color:black">用户应密切关注平台公布的信息、电子邮箱的信息、手机和即时通讯工具的信息。如用户设置不接收平台的有关通知或提醒的，可能收不到该等通知信息，用户不得因此以未收到或未阅读该等通知信息主张相关通知未有效送达。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-size:13.5pt;,sans-serif;color:black">第九条 法律适用与争议解决</span></b></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">1. </span><span style="font-size:13.5pt;,sans-serif;color:black">本协议的订立、履行和解释及争议的解决均应适用中华人民共和国法律（为本协议之目的，不包括香港特别行政区、澳门特别行政区及台湾地区的法律）并受中华人民共和国法律管辖。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">2. </span><span style="font-size:13.5pt;,sans-serif;color:black">因本协议引起的或与本协议有关的争议，应首先友好协商解决，协商不成的，用户在此完全同意将纠纷或争议提交中民超级会员所在地有管辖权的人民法院诉讼解决。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-size:13.5pt;,sans-serif;color:black">第十条 其他</span></b></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">1. </span><span style="font-size:13.5pt;,sans-serif;color:black">自用户通过网站平台页面点击确认或以其他方式选择接受本协议时，本协议即生效。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">2. </span><span style="font-size:13.5pt;,sans-serif;color:black">本协议与中民超级会员、其他合作链接平台上其他条款和规则可互相引用参照，如有不同，应以本协议为准。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">3. </span><span style="font-size:13.5pt;,sans-serif;color:black">如本协议中的任何条款无论因何种原因完全或部分无效或不具有执行力，则该条款并不影响本协议项下其他条款的效力，本协议的其他条款仍然有效，各方应尽可能地将原无效条款置换为符合本协议目的的、有效的新条款并予以遵守。</span></p>
+
+								<p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-size:13.5pt;,sans-serif;color:black">4. </span><span style="font-size:13.5pt;,sans-serif;color:black">中民超级会员保留制定和单方随时修改本协议（包括但不限于上述规则）的权利，并将在中民超级会员上公布经修订后的协议，不做逐一通知。如用户于经修订的协议的生效日起继续使用本平台服务，即被视为用户已经阅读并充分了解经修订的内容，并同意接受修订后协议的约束。如果用户不同意，则可以终止使用本服务。</span></p>
+
+								<p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary button-caution" data-dismiss="modal" id="btn-agree">同意</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="/plugins/skyform/jquery.form.min.js" type="text/javascript"></script>
+		<script src="/plugins/skyform/jquery.validate.min.js" type="text/javascript"></script>
+		<script src="/js/view/login/register.js" type="text/javascript"></script>
+	</body>
+
+</html>

@@ -1,0 +1,190 @@
+/**
+ * Created by maybe on 2018/4/23
+ */
+
+/*投资理财列表页*/
+.posi-fix{
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	line-height: 0.7;
+}
+.clear{
+	clear: both;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+.screen_box{
+	overflow: hidden;
+}
+.screen_box .ex{
+	position: relative;
+    width: 100%;
+    overflow: auto;
+}
+.screen_box ul{
+	position: relative;    
+    padding: 0; 
+    width: 140%;
+    background-color: #005eb0
+}
+.screen_box ul li{
+	list-style: none;
+    display: inline-block;
+    padding: 5px 18px;
+    text-align: center;
+	font-size: 15px;
+	line-height: 34px;  
+}
+.screen_box  .cur a{
+	color: #fff;
+}
+.screen_box li a{
+	color: #a0a0a0;
+}
+.px{
+	position: relative;
+	height: 36px;
+	border-bottom: 1px solid #e2e2e2;
+}
+.px ul li{
+	float: left;
+	width: 25%;
+	position: relative;
+	margin-top: 6px;
+	padding-right: 16px;
+	text-align: center;
+	border-right: 1px solid #e2e2e2;
+}
+.px ul li:nth-last-child(1){
+	border: none;
+}
+.px ul li span{
+	display: inline-block;
+    line-height: 24px;
+    font-size: 15px;  
+}
+.px ul .style-1{
+	background: url(/img/sx_mr.png) 72px no-repeat;
+	background-size: 14%;
+}
+.px ul .style-2{
+	background: url(/img/screen_d.png) 66px 10px no-repeat;
+	background-size: 14%;
+}
+.px ul .on{
+	background: url(/img/sx_u.png) 66px 4px no-repeat;
+}
+.px ul .up{
+	background-image: url(/img/up.png);
+}
+.px ul .down{
+	background-image: url(/img/on.png);
+}
+.sx_condition{
+	position: fixed;	
+    top: 80px;
+    background-color: #0075e3;
+    width: 100%;    
+    padding: 10px 12px;
+    display: none;   
+    height: 100%;
+    background-color: #fff;
+    z-index: 10;
+}
+.sx_condition a{	
+    line-height: 30px;
+    padding: 0 5px;
+    background-color:#d6d6d6 ;
+    color: #fff;
+    margin: 5px 4px; 
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.sx_condition .cur{
+	background-color: #005eb0;
+}
+.sx_condition .foot>div{
+	display: inline-block;
+    width: 49%;
+    text-align: center;
+    background-color: #3333;
+    line-height: 32px;
+    border-radius: 4px;
+}
+.product_list{
+	letter-spacing: 1px;
+}
+.product_list .title strong{
+	width: 40%;
+    display: inline-block;
+    font-size: 14px;
+    color: #5e5e5e;
+}
+.product_list .title span{
+	padding: 0 8px;    
+    border: 1px solid #e1e1e1;    
+}
+.product_list li{
+	padding: 16px 16px 0px;
+    border-bottom: 0.2px solid #e8e8e8;
+}
+.product_list li button{
+	outline: none;
+    border: 1px solid #52a8f1;
+    color: #52a8f1;
+    background-color: #fff;
+    font-weight: bold;
+    float: right;
+    border-radius: 4px;
+    line-height: 20px;
+}
+.product_list li .content{
+	margin-top: 24px;
+	position: relative;
+	width: 100%;
+}
+.product_list li .content>div{
+	display: inline-block;
+}
+.product_list li .content .left{
+	width: 46%;
+}
+.product_list li .content .left b{
+	font-size: 18px;
+    color: #f35833;
+}
+.product_list li .content .left p{
+	color: #a5b0b8;
+    line-height: 32px;
+}
+.product_list li .content .mid .line{
+	width: 100%;
+    height: 1px;
+    border: 1px solid #e0e0e0;
+}
+.product_list li .content .mid .line span{
+	width: 50%;
+    border: 1px solid #ff6c43;
+    display: list-item;
+    margin-top: -1px;
+}
+.product_list li .content .mid{
+	vertical-align: top;
+	width: 34%;
+    margin-top: 14px;
+}
+.product_list li .content .right{
+	color: #d5dade;
+	padding-left: 4px;
+}
+.product_list li .content .right span{
+	color:#ff6c43 ;
+}
+.pages{
+	text-align: center;
+}

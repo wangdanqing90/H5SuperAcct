@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <!--#include file = "/view/layout/head-script.html" -->
+    <link href="/css/externalDocking/myAccount.css" rel="stylesheet">
+    <!--<link href="/css/account/finance.css" rel="stylesheet">-->
+    <title> 天金所投资记录</title>
+</head>
+
+<body>
+
+	<header>
+	    <em class="fl"><a href="investRecord.html" id="backTo" onclick="backClick()"><img src="/img/externalDocking/back.png"></a></em>
+	    <span id="headName">天金所投资记录</span> 
+	</header>
+	<div style=" height:44px;"></div>
+	
+	<div>
+		<div class="investment-Records margin-top-10" id="invest">
+		</div>
+		
+	</div>
+
+
+</body>
+</html>
+<script>
+	var pageSize = 4;
+	var currentPage = 1;
+	var access_token = JSON.parse($.cookie('user')).token;
+    var 	user = $.getUser();
+    var 	userId = user.userBasic.userId;
+	getRecords()
+	function getRecords(){  	
+        var phone = ""; //user.mobile;
+        var url = '/api/tjs/getTJSAssetInfo.do';
+        $.ajax({
+            url: url,
+            data: {
+            	userId:userId,
+            	access_token:access_token,
+                mobile:user.userSecurityBind.mobileNo,
+                pageSize: pageSize,
+                pageIndex: currentPage
+            },
+            async:true,
+            dataType: 'json',
+            type: 'post',
+            success: function (data) {
+                
+                if (data.errorCode == 80000) {
+                    $("#invest").html('<div class="no-data">无资产信息数据</div>');
+                } else {
+                    if (data.data) {
+                        listLength = data.total_count;
+                        console.log(listLength)
+                        if (data.data.length != 0) {
+                            listLength = data.total_count;
+                            console.log(listLength)
+                        }
+                        $('#investmentRecords').empty();
+                        var html = '';
+                        html += '<h3 class="title">投资记录</h3>'
+                        $.each(data.data, function (index, item) {
+
+                            html += '<div class="item">'
+                            html += '<h4>' + item.product_name + '</h4>'
+                            html += '<div class="item-content">'
+                            html += '<div class="principal">'
+                            html += '<p>' + item.ta_balance + '</p>'
+                            html += '<p>投资本金（元）</p>'
+                            html += '</div>'
+                            html += '<div class="rofit">'
+                            html += '<p>' + item.product_expected_income + '</p>'
+                            html += '<p>预计收益（元）</p>'
+                            html += '</div>'
+                            html += '<div class="date">'
+                            html += '<p>' + item.product_expiring_date + '</p>'
+                            html += '<p>预计产品到期日</p>'
+                            html += '</div>'
+                            html += '</div>'
+                            html += '</div>'
+
+                        });
+                        $('#invest').append(html);
+                    } else {
+                        alert('网络忙，请稍后再试！')
+                    }
+                }
+            },
+            error: function (error) {
+                //console.log('系统处理出现错误...');
+              
+                alert("网络忙，请稍后再试！");
+            }
+        });
+        //console.log(listLength)
+        //return listLength;
+    
+}
+</script>

@@ -1,0 +1,24 @@
+html,body{background: #f0f4f7}
+a:hover,a:active{text-decoration: none}
+
+.div-personal .div-user{background: #005bb1;padding: 20px;}
+.div-personal .div-user .h3-name{color: #fff;}
+.div-personal .div-user .h5-phone{color: #89b3d7}
+.div-personal .div-action{padding: 20px;font-size: 16px;color: #707070;background: #fff;border-bottom: 1px solid #dddddd}
+.div-personal .div-action >img{float: right;height: 16px;margin-top:3px;}
+.div-personal .div-action >span{float: right;color: #a0acb5}
+.div-personal .div-action >span>img{height: 18px;margin-right: 5px;float: left;margin-top: 2px;}
+.div-personal .div-btn{background: #fff;padding: 15px;font-size: 18px;color:#ff342e;text-align: center;border-top: 1px solid #dddddd;position: fixed;bottom: 0px;right: 0px;left: 0px;}
+.div-personal .div-btn-a{background: #fff;padding: 15px;font-size: 18px;color:#ff342e;text-align: center;}
+.div-personal .div-btn-next{background: #fff;padding: 15px;font-size: 18px;color:#0080eb;text-align: center;}
+
+.div-personal .div-user .div-info{color: #4487c5}
+.div-personal .div-user .h3-mobile{color: #fff;}
+
+.div-mobil-input{background: #fff;padding: 5px 10px;font-size: 16px;}
+.div-mobil-input input {width: 100%;border: 0px;background: #fff;font-size: 16px;padding:10px;}
+.div-mobil-input select {width: 100%;border: 0px;background: #fff;font-size: 16px;padding:10px;}
+.div-mobil-input .img-code{height: 32px;position: absolute;margin-top: 5px}
+.div-mobil-input a{color:#64b4fb;margin-top: 2px; float: left;padding: 10px;}
+.div-btn{background: #fff;text-align: center;font-size: 18px;color:#007feb;padding: 15px; }
+.border-bottom{border-bottom: 1px solid #f0f4f7;}

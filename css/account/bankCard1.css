@@ -1,0 +1,130 @@
+body{
+    background-color: #f0f4f8;
+}
+.uhide{display: none;}
+.ushow{display: block;}
+.clearfloat:after{
+    content:".";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.item{
+    height: 44px;
+    padding: 0 16px;
+    background-color: #ffffff;
+    margin-top: 12px;
+}
+.item p{
+    margin: 0;
+    padding: 0
+    font-size: 14px;
+    line-height: 44px;
+}
+.item p:nth-of-type(1){
+    width: 32%;
+    float: left;
+}
+.item p:nth-of-type(2){
+    width: 68%;
+    float: right;
+    font-weight: 600;
+}
+.item p:nth-of-type(2) span{
+    margin-left: 28px;
+}
+.unbind-btn{
+    margin-top: 40px;
+    background-color: #ff653a;
+    color: #ffffff;
+    line-height: 46px;
+    font-size: 16px;
+    text-align: center;
+}
+/*解除绑定弹窗*/
+.noLogin{width:100%;height:100%;position: absolute;top: 0;left: 0;margin: auto;background-color: rgba(000,000,000,0.5);}
+.tip-title{width:72%;height:124px;position: absolute;left:50%;margin-top:240px;margin-left: -36%;background-color: #ffffff;border-radius: 4px;}
+.tip-title .go-login{line-height: 60px;text-align: center;border-bottom: 1px solid #dddddd;}
+.tip-title .tip-btn p{width:50%;text-align: center;line-height:44px;float: left;color: #0080EC;}
+.tip-title .tip-btn p:nth-of-type(1){border-right: 1px solid #dddddd;}
+
+/*解除绑定银行卡成功unbindSuccess.html*/
+.success{
+
+}
+.success-icon{
+    position: relative;
+
+}
+.success-icon img{
+    width: 56px;
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    margin-left: -28px;
+}
+.success-icon p{
+    width: 100%;
+    font-size: 18px;
+    position: absolute;
+    top: 202px;
+    text-align: center;
+}
+.go-personal{
+    width: 100%;
+    position: fixed;
+    bottom: 46px;
+}
+ .go-personal .end-btn{
+     margin: 0 16px;
+     line-height: 46px;
+     text-align: center;
+     font-size: 20px;
+     color: #ffffff;
+     background-color: #ff653a;
+     border-radius: 4px;
+ }
+ .tel{
+     text-align: center;
+     margin-bottom: 20px;
+     font-size: 15px;
+ }
+.tel a{
+    color: #005bb1;
+    font-size: 15px;
+}
+
+
+
+/*银行卡*/
+.card{display: inline-block;width:100%;min-width:65px;max-width:140px;min-height: 36px;padding: 0;margin:6px 0;background: url(/img/account/Bank.png) no-repeat;}
+.bank-1{background-position: 0 0;} /** 中国农业银行 */
+.bank-2 {background-position: 0 -36px;} /** 中国银行 */
+.bank-3 {background-position: 0 -72px;} /** 中国建设银行 */
+.bank-4 {background-position: 0 -108px;} /** 中国光大银行 */
+.bank-5 {background-position: 0 -144px;} /** 兴业银行 */
+.bank-6 {background-position: 0 -180px;} /** 中信银行 */
+.bank-7 {background-position: 0 -216px;} /** 招商银行 */
+.bank-8 {background-position: 0 -252px;} /** 中国民生银行 */
+.bank-9 {background-position: 0 -288px;} /** 交通银行 */
+.bank-10 {background-position: 0 -324px;} /** 广发银行 */
+.bank-11 {background-position: 0 -360px;} /** 华夏银行 */
+.bank-12 {background-position: 0 -396px;} /** 中国工商银行 */
+.bank-13 {background-position: 0 -432px;} /** 快捷支付 */
+.bank-14 {background-position: 0 -468px;} /** 中国邮政储蓄银行 */
+.bank-15 {background-position: 0 -504px;} /** 平安银行 */
+.bank-16 {background-position: 0 -540px;} /** 浦发银行 */
+.bank-17 {background-position: 0 -580px;} /** 上海银行 */
+.bank-18 {background-position: 0 -626px;} /** 兰州银行 */
+.bank-19 {background-position: 0 -676px;} /** 南阳银行 */
+.bank-20 {background-position: 0 -724px;} /** 深圳发展银行 */
+.bank-21 {background-position: 0 -766px;} /** 南洋商业银行 */
+.bank-22 {background-position: 0 -810px;} /** 恒生银行 */
+.bank-23 {background-position: 0 -854px;} /** 花旗银行 */
+.bank-24 {background-position: 0 -896px;} /** 北京银行 */

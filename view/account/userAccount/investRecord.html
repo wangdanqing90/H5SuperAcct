@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <!--#include file = "/view/layout/head-script.html" -->
+    <link href="/css/externalDocking/myAccount.css" rel="stylesheet">
+    <!--<link href="/css/account/finance.css" rel="stylesheet">-->
+    <title>投资记录</title>
+</head>
+<style type="text/css">
+	.margin-top-5{
+		border-top: 1px solid #eeeded;
+	}
+</style>
+<body>
+
+	<header>
+	    <em class="fl"><a href="/view/account/myAccount.html" onclick="backClick()"><img src="/img/externalDocking/back.png"></a></em>
+	    <span id="headName">投资记录</span> 
+	</header>
+	<div style=" height:44px;"></div>
+	
+	<div>
+		<div class="margin-top-10 user-list white padding-left-15 font-size-14">
+			<p><a class="block" style="line-height: 60px;" href="detail.html?status=1"><img style="width: 20px;vertical-align: -3px;" src="/img/businessPartner/investRecord/icon-tianjin.png" alt="" />  <span style="margin-left: 6px;">天津金融资产交易所</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+		</div>
+		<div class="margin-top-5 user-list white padding-left-15 font-size-14">
+			<p><a class="block" style="line-height: 60px;" href="detail.html?status=2"><img style="width: 20px;vertical-align: -3px;" src="/img/businessPartner/investRecord/icon-anjin.png" alt="" /> <span style="margin-left: 6px;">安金所anfae | 安金普惠</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+		</div>
+		<div class="margin-top-5 user-list white padding-left-15 font-size-14" onclick="showNotice()">
+			<p><a class="block" style="line-height: 60px;" href="javaScript:void(0);"><img style="width: 22px;height:33px;vertical-align: -9px;" src="/img/businessPartner/investRecord/icon-dj.png" alt="" /> <span style="margin-left: 6px;color:#515151;">东北亚创新金融资产交易中心</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+		</div>
+		
+		
+		
+		<div class="margin-top-5 user-list white padding-left-15 font-size-14 hide">
+			<p><a class="block" style="line-height: 60px;" href="detail.html?status=3"><img style="width: 20px;vertical-align: -3px;" src="/img/businessPartner/investRecord/icon-itou.png" alt="" /> <span style="margin-left: 6px;">中民i投</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+		</div>
+		
+		
+		
+	</div>
+
+
+<!-- 头部结束 -->
+
+ <!--产品展示 --  天金/itou/安金 -->
+<!--<ul id="myTab" class="nav nav-tabs">
+	<li class="active">
+		<a href="#tianJing" data-toggle="tianjin" onclick="find('tainjin')">天金所</a>
+	</li>
+	<li>
+		<a href="#iTou" data-toggle="itou" onclick="find('itou')">I投</a>
+	</li>
+	<li>
+		<a href="#anJin" data-toggle="anjin" onclick="find('anjin')">安金</a>
+	</li>
+</ul>
+<div id="myTabContent" class="tab-content">
+	<div class="tab-pane fade in active" id="tianJin" >
+		<div class="investment-Records" id="investmentRecords">
+		</div>
+	</div>
+	<div class="tab-pane fade" id="iTou" >
+		<div class="investment-Records" id="records-itou">
+		</div>
+	</div>
+	<div class="tab-pane fade" id="anJin">
+		<div class="investment-Records" id="records-anjin">
+		</div>
+	</div>
+</div>-->
+
+<!--<div class="main container">-->
+	<!--<div class="row">-->
+		 <!--<p id="recharge" class="recharge2 col-xs-12 col-xs-12">充值</p>-->
+   		 <!--<p id="forward" class="forward2 col-xs-12 col-xs-12">提现</p>-->
+	<!--</div>-->
+    <!-- -->
+<!--</div>-->
+
+
+
+<!--<script language="javascript" src="/js/view/externalDocking/myAccount.js"></script>-->
+
+</body>
+</html>
+<script>
+	$(".user-list").click(function(){
+		$(this).css("background-color","#F2F2F2")
+	})
+	function showNotice(){
+		layer.open({   	
+    	skin:"msg",
+    	content:"调试中,敬请期待!",
+    	time:2,
+    	style:'font-size: 16px; position: absolute;top: 206px;width: 80%;left: 10%;max-height: 50px;padding-top:10px;',
+    	end:function(){
+    		$('.user-list').css("background-color","#FFFFFF")
+    	}    					
+		})
+	}
+	
+	
+</script>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <!--#include file = "/view/layout/head-script.html" -->
+    <link href="/css/externalDocking/home.css" rel="stylesheet">
+    <script language="javascript" src="/js/view/externalDocking/home.js"></script>
+    <title>合作机构</title>
+</head>	
+	<style type="text/css">
+		.hand{cursor: pointer;}
+		.block{display: block;}
+	</style>
+
+<body>
+<!--头部开始-->
+<header>
+    <em class="fl" ><a id="backTo" ><img src="/img/externalDocking/back.png" /></a></em>
+    <span id="headName">合作机构</span>
+     <em class="fr"><a href="/view/account/myAccount.html"><img style="width: 24px!important;" src="/img/businessPartner/icon-user.png"></a></em>
+</header>
+<div style=" height:44px;"></div>
+<!--头部结束-->
+<!--https://wap.puhui.anfae.com.cn-->
+<!--https://www.mszxyh.com/wapserver/outer/index.html?ChannelId=mszx02489&seq=DZZH_20180330132854&Page=index-->
+<div class="main">
+    <div>
+    	<a href="javascript:;" class="block">  	
+	    	<div class="item-icon tj hand"  >
+	        	<img src="/img/logo/logo-tj.png" alt=""  />
+	        </div>
+		</a>
+        <a href="https://wap.puhui.anfae.com.cn/?fresh=1">
+          <div class="item-icon aj">
+              <img src="/img/logo/logo-aj.png" alt="" />
+          </div>
+        </a>
+
+        <a href="javascript:;"  class="hand block">
+          <div class="item-icon dj">
+               <img  src="/img/logo/logo-dj.png" alt="" />
+          </div>
+        </a>
+		<a href="javascript:;" onclick="skipHaiJin()" class="hide hand">
+            <div class="item-icon hj">
+                <img src="/img/logo/logo-hj.png" alt=""   />
+            </div>
+        </a>
+
+        <a href="https://www.mszxyh.com/wapserver/outer/index.html?ChannelId=mszx02489&seq=DZZH_20180330132854&Page=index">
+            <div class="item-icon ms">
+                 <img src="/img/logo/logo-ms.png" alt=""  />
+            </div>
+        </a>
+        
+        <a href="javascript:;" onclick="skipHuiHe()" class="hide hand" >
+            <div class="item-icon ">
+              		<img src="/img/assetManagement/huihe.png" alt=""  style="margin-top: 24px;width: 60%;" />
+            </div>
+        </a>
+        
+         <a href="javascript:;" class="hand block" >
+            <div class="item-icon zg">
+              	<img src="/img/logo/logo-zg.png"/>             	
+            </div>
+        </a>
+        
+        <!--<div class="item-icon">
+        	<img src="/img/externalDocking/logo.png" alt="" onclick="jumpTianJin()" />
+        </div>
+        <a href="http://10.17.5.102:8091/Wap/">
+            <div class="item-icon">
+                <img src="/img/externalDocking/tj.png" alt=""  />
+            </div>
+        </a>
+
+        <a href="https://www.mszxyh.com/wapserver/outer/index.html?ChannelId=mszx02489&seq=DZZH_20180330132854&Page=index">
+            <div class="item-icon">
+                <img src="/img/externalDocking/ms.png" alt="" />
+            </div>
+        </a>-->
+    </div>
+</div>
+</body>
+</html>
+<script>
+
+$(function(){
+	$(".item-icon").click(function(){
+		$(this).css("background-color","#f2f2f2")
+	})
+	$("#backTo").click(function(){
+		location.href="/view/account/myAccount.html";		
+	})
+})		
+</script>

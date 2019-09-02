@@ -1,0 +1,39 @@
+*{margin: 0;padding: 0;}
+body{background-color: #f0f4f8;}
+.uhide{display: none;}
+.ushow{display: block;}
+.clearfloat:after{
+    content:".";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+.main .tab-list{height: 42px;margin-bottom: 12px;background-color: #ffffff; padding: 0;border-bottom: 1px solid #dddddd;}
+.main .tab-list li{float: left;width: 25%;line-height: 40px;text-align: center;color: #707070;}
+.main .tab-list li a{color: #707070;font-size: 14px;padding: 12px 6px;}
+.main .tab-list .active{border-bottom: 2px solid #007feb;color: #007feb;}
+.main .tab-list li b{width: 1px;margin-top:8px;background-color: #dddddd;height: 26px;float: right;}
+
+
+.finance{}
+.finance .finance-item{background-color: #ffffff;margin-bottom: 12px;}
+.finance .finance-item .item-title{border-bottom: 1px solid #dddddd;padding-bottom:10px;}
+.finance .finance-item .item-title h3{padding-left:16px;padding-top:10px;color: #000000;font-size: 14px;font-weight: 600;}
+.finance .finance-item .item-title p{float: left;padding-left: 16px;margin-top: 8px;}
+.finance .finance-item .item-title p span{ font-size: 12px;color: #a1acb5;}
+.finance .finance-item .item-title p span:nth-of-type(2){color: #000000;padding-left: 8px;padding-right: 4px;}
+.finance .finance-item .item-title a{float: right;padding: 9px;margin-right: 16px;color: #007feb;border: 1px solid #007feb;border-radius: 4px;}
+
+.catipal-type{ height: 86px; padding: 20px 0; background-color: #ffffff;  }
+.catipal-type div{ width: 33.33%; text-align: center; font-size: 13px; float: left; }
+.catipal-type .item-balance .profit{color: #ff6643;}
+.catipal-type .item-grey{ color: #000000; margin-bottom: 15px;  }
+.catipal-type .item-yellow{ color: #a1acb5;margin-bottom: 0px;  }
+.catipal-type .item-amount{ border-left: 1px solid #dddddd; border-right: 1px solid #dddddd; }
+/*.catipal-type .icon-pdf{margin-bottom: 0;}*/
+.catipal-type .icon-pdf img{width: 22px;}
+.item-catipal-mar{padding-top:14px;}
+.item-catipal .contract{padding: 5px 10px;color: #ffffff;background-color: #d8d8d8;border-radius: 4px;}
+.item-catipal a{display: block;}

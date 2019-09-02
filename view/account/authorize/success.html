@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head lang="en">
+	<!--#include file = "/view/layout/head-script.html" -->
+	<link href="../../../css/authorize/forget.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../../css/authorize/login.css"/>
+    <title>成功</title>
+</head>
+<body>
+<div class="div-actionBar">
+	<em class="fl"><a  id="backTo"><img src="/img/externalDocking/back.png"></a></em>
+	<span>找回密码</span>
+</div>
+<div class="div-body" style="position: relative;padding-top: 152px!important;">
+	<div class="bg-img">
+		<img src="../../../img/authorize/success.png"/>
+	</div>
+	<div id="textH">
+		恭喜您！修改密码成功
+	</div>
+	<p class="timeOut"><span id="lateTime">5</span>秒后跳转至首页，请重新登录</p>
+	<div class="nowLogin">
+		立即登录
+	</div>
+</div>
+
+<script src="/plugins/skyform/jquery.form.min.js" type="text/javascript"></script>
+<script src="/plugins/skyform/jquery.validate.min.js" type="text/javascript"></script>
+<!--<script src="/js/view/login/H5Register.js" type="text/javascript"></script>-->
+<script type="text/javascript">
+	var time = 5;
+	var setTime = setInterval(function(){
+		time --;
+		$('#lateTime').html(time);
+		if(time <= 0){
+			window.location.href = "/view/account/authorize/login.html"
+			clearInterval(setTime);
+		}
+	}, 1000)
+	$('.nowLogin').click(function(){
+		window.location.href = "/view/account/authorize/login.html"
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body{
+    background-color: #f0f4f7;
+}
+.uhide{display: none;}
+.ushow{display: block;}
+.clearfloat:after{
+    content:".";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+.header span:nth-of-type(1){
+    width:25%;
+    float: left;
+    text-align: left;
+    font-size: 14px;
+}
+.header span:nth-of-type(1) img{
+    width:20px;
+}
+.header span:nth-of-type(2){
+    width:50%;
+    float: left;
+}
+.header input{
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+    -webkit-appearance:none;
+    outline: none;
+    border: none;
+    width:25%;
+    font-size: 14px;
+    float: right;
+    text-align: right;
+    background: transparent;
+}
+.header .white{
+    color: #ffffff;
+}
+.header .grey{
+    color: #7499ca;
+}
+
+.main{
+    height: 46px;
+    line-height: 46px;
+    background: #ffffff;
+    padding: 0 16px;
+    margin: 60px 0 12px;
+}
+.main .inp{
+    height: 46px;
+    width: 80%;
+    float: left;
+    font-size: 15px;
+    line-height: 46px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+    -webkit-appearance:none;
+    outline: none;
+    border: none;
+}
+.main #clear{
+    width: 20%;
+    height: 100%;
+    float: right;
+}
+.main .clear-btn{
+    background: url("/img/account/close.png") no-repeat right center;
+    background-size: 11px;
+}
+
+.result{
+    padding: 0 16px;
+    line-height: 22px;
+    font-size: 16px;
+}

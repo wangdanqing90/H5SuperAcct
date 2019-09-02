@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <!--#include file = "/view/layout/head-script.html" -->
+    <link href="/css/externalDocking/myAccount.css" rel="stylesheet">
+    <!--<link href="/css/account/finance.css" rel="stylesheet">-->
+    <title>个人中心</title>
+</head>
+<style type="text/css">
+	.font-size-15{
+		font-size: 15px;
+	}
+	.margin-top-12{margin-top: 12px!important;}
+	.border-top-gray{border-top: 1px solid #F2F2F2;}
+	.font-blue{font-size: 13px;color: #2B8FEA;
+			    border: 1px solid #2B8FEA;
+			    line-height: 15px;   
+			    margin-top: 12px;
+			    padding: 2px 4px;
+			    border-radius: 4px;
+    }
+</style>
+<body>
+<!--头部开始 -->
+<header>
+    <em class="fl"><a href="javaScript:void(0)" id="backTo" onclick="backClick()"><img src="/img/externalDocking/back.png"></a></em>
+    <span id="headName">安全中心</span>
+   <!-- <input type="button" onclick="logout()" value="退出登录" class="logout"/>-->
+    <!-- <em class="fr"><img src="../../images/product/product/fx.png"></em>-->
+</header>
+<div style=" height:44px;"></div>
+<!-- 头部结束 -->
+<div id="phone">
+    <img src="/img/externalDocking/profile3.png" alt=""/>
+    <span class="sp font-size-15"></span>
+</div>
+
+
+
+
+<!-- 我的渠道投资  -->
+<div class="margin-top-6 user-list white padding-left-15 font-size-14 hide">
+	<p><a class="block" href="/view/account/userAccount/investRecord.html"> <img src="/img/externalDocking/icon-tzjl.png"/> <span class="font-size-15">我的渠道投资</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>
+<!-- 我的资产  -->
+<!--<div class="margin-top-6 user-list white padding-left-15 font-size-14 hide">
+	<p><a class="block" href="myAsset.html"> <span class="font-size-15">我的资产</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>-->
+<!-- 活期宝  -->
+<!--<div class="margin-top-6 user-list white padding-left-15 font-size-14">
+	<p><a class="block" href="resetPassword.html"> <span class="font-size-15">活期宝</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>-->
+
+<!-- 我的银行卡  -->
+<div class="margin-top-6 user-list white padding-left-15 font-size-14 hide">
+	<p><a class="block" href="bankCard.html"> <span class="font-size-15">我的银行卡</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>
+<!-- 安全中心 -->
+<div class="margin-top-6 user-list white padding-left-15 font-size-14 hide">
+	<p><a class="block" href="resetPassword.html"><img class="w-16" src="/img/externalDocking/icon-saft.png" alt=""  />  <span class="font-size-15">安全中心</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>
+<!-- 合作机构  -->
+<!--<div class="margin-top-6 user-list white padding-left-15 font-size-14 hide">
+	<p><a class="block" href="/view/externalDocking/home.html"> <span class="font-size-15">合作机构</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>-->
+
+
+
+<div class="margin-top-6 user-list white padding-left-15 font-size-14 ">
+	<p><a class="block" href="resetPassword.html"> <span class="font-size-15">修改登录密码</span> <span class="pull-right margin-right-10"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>
+<div id="btn-setPayPassword" class="margin-top-1 user-list hide  white padding-left-15 font-size-14">
+	<p><a class="block" href="setPayPassword.html"> <span class="font-size-15">设置支付密码</span> <span class="pull-right margin-right-10"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>
+<div id="btn-resetPayPass" class="margin-top-1 user-list hide  white padding-left-15 font-size-14">
+	<p><a class="block" href="resetPayPassword.html"><span class="font-size-15">修改支付密码</span> <span class="pull-right margin-right-10"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>
+<div  class=" user-list margin-top-6 white padding-left-15  font-size-14 ">
+	<p><a class="block" href="updatePhone.html"> <span class="font-size-15">修改手机号</span> <span class="pull-right margin-right-10"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>
+
+<div  class=" user-list margin-top-6 white padding-left-15  font-size-14 " style="padding-right: 15px;">
+	<p><a class="block" href="javaScript:void(0);"> <span class="font-size-15">风险评估</span> </a></p>
+	<p id="risk-ZT" class="text-center border-top-gray  hide">
+		<a href="javaScript:void(0);" class="pull-left"><img src="/img/account/logo-zt.png"/>证通财富</a>
+		<a href="javaScript:void(0);" id="riskname" class=""></a>
+		<a href="javaScript:void(0);" id="risktxt" class="pull-right font-blue margin-top-12" onclick="queryUserBalance();">评估</a>
+		<div class="clearfix"></div>
+	</p>
+	
+	<p id="" class="text-center border-top-gray">
+		<a href="javaScript:void(0);" class="pull-left">合格投资者确认</a>
+		<a href="javaScript:void(0);" id="certification" class="pull-right font-blue margin-top-12" onclick="queryUserCertification();">开始评估</a>
+		<div class="clearfix"></div>
+	</p>
+</div>
+
+
+
+<!--<div class="margin-top-6 user-list white padding-left-15 font-size-14 hide">
+	<p><a class="block" href="/view/account/fileUpload.html"> <span class="font-size-15">资料上传</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>-->
+
+
+
+
+<script language="javascript" src="/js/view/account/safety.js"></script>
+
+</body>
+</html>

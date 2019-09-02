@@ -1,0 +1,20 @@
+body{
+    background-color: #f0f4f7;
+}
+.uhide{display: none;}
+.ushow{display: block;}
+.clearfloat:after{
+    content:".";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+p,h3{margin: 0;padding: 0;}
+
+.main h3{height: 40px;line-height: 40px;padding: 0 16px;color: #707070;font-size: 12px;}
+.main .xzwy{background: #ffffff;}
+.main .xzwy p{margin-left: 16px;line-height: 44px;color: #000000;font-size: 14px;border-bottom: 1px solid #dddddd;}
+
+.next-step{width:100%;position: fixed;bottom:0;left:0;color: #ffffff;background: #ff653a;font-size: 16px;text-align: center;line-height: 46px;}

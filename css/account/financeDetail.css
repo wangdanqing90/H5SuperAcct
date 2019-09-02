@@ -1,0 +1,112 @@
+body{
+    background-color: #f0f4f7;
+}
+.uhide{display: none;}
+.ushow{display: block;}
+.clearfloat:after{
+    content:".";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+.header span:nth-of-type(1){
+    width:25%;
+    float: left;
+    text-align: left;
+}
+.header span:nth-of-type(1) img{
+    width:20px;
+}
+.header span:nth-of-type(2){
+    width:50%;
+    float: left;
+}
+.header span:nth-of-type(3){
+    width:25%;
+    font-size: 14px;
+    float: right;
+    text-align: right;
+    background-image: url("/img/account/bill.png");
+    background-repeat:  no-repeat;
+    background-position: right 36px center;
+    background-size: 20px;
+}
+.main{margin-top: 44px;}
+.main .tab-list{height: 42px;margin-bottom: 12px; padding: 0;background-color: #ffffff;border-bottom: 1px solid #dddddd;}
+.main .tab-list li{float: left;width: 33.3%;line-height: 40px;text-align: center;color: #707070;}
+.main .tab-list li a{color: #707070;font-size: 14px;padding: 12px 12px;}
+.main .tab-list .active{border-bottom: 2px solid #007feb;color: #007feb;}
+.main .tab-list li b{width: 1px;margin-top:8px;background-color: #dddddd;height: 26px;float: right;}
+
+.fd-bg{
+    background-color: #ffffff;
+}
+.profit-list{}
+.profit-item:last-child{
+    border-bottom: 0;
+}
+
+.profit-item{
+    height: 50px;
+    margin-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid #dddddd;
+}
+.profit-item p{
+    width: 50%;
+    line-height: 49px;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+.profit-item p:nth-of-type(1){
+    color: #000;
+    float: left;
+}
+.profit-item p:nth-of-type(2){
+    color: #ff6643;
+    text-align: right;
+    float: right;
+}
+
+.recharge-list{}
+.recharge-item{
+    height: 68px;
+    margin-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid #dddddd;
+}
+.recharge-item:last-child{
+    border-bottom: 0;
+}
+.recharge-item .title{
+    padding: 16px 0 6px 0;
+    margin: 0;
+}
+.recharge-item .title span{
+    font-size: 14px;
+    color: #000000;
+}
+.recharge-item .title span:nth-of-type(1){
+    float: left;
+}
+.recharge-item .title span:nth-of-type(2){
+    float: right;
+}
+.recharge-date{
+    padding-bottom: 6px;
+    margin: 0;
+}
+.recharge-item .recharge-date span:nth-of-type(1){
+    padding-top: 6px;
+    float: left;
+    color: #707070;
+}
+.recharge-item .recharge-date span:nth-of-type(2){
+    font-size: 14px;
+    color: #000;
+    float: right;
+}
+.forward-list{}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <!--#include file = "/view/layout/head-script.html" -->	 	  
+	    <title>授权海金</title>
+	</head>
+<style>
+header{background: #ffffff;}
+header span{color: #4a4a4a;}
+.content{box-shadow: 0 0 12px 0 rgba(237,2,14,0.10);border-radius: 12px;margin-top: 10px;}
+.text-left{font-size: 15px;color: #515151;letter-spacing: 0;text-indent: 16px;line-height: 100px; position: relative;}
+.absolute{position: absolute;}
+.absolute img{width: 180px;position: absolute; top: -35px;left: 6px;}
+.absolute .phone-text{position: absolute;top: -50px; left: 55px;color: #515151;}
+.container header{border-bottom: 1px solid #eeeded;}
+.container .btn{box-shadow: 0 0 12px 0 rgba(237,3,13,0.20);border-radius: 4px;margin: 20px auto; width: 100%;line-height: 32px; font-size: 16px;color: #fbffe3;cursor: pointer;}
+.container  .uncheck{background-color: #f9cf79;}
+.container  .check{background-color:#ff9a00;}
+.footer{ text-align: center; margin-top: 100px;color: #d9d9d9;font-size: 12px;}
+
+</style>
+	<body>
+		<div class="container">
+			<header>
+			    <em class="fl"><a  id="backTo" onclick="backClick()"><img src="/img/externalDocking/back.png"></a></em>
+			    <span id="headName">授权登录</span>
+			    <!-- <em class="fr"><img src="../../images/product/product/fx.png"></em>-->
+			</header>
+			<div style=" height:44px;"></div>
+			<div class="text-center content  " >
+				<img src="/img/haijin/login.png" class="width-full"   alt="" />
+				<div class="text-left">
+					<div class="absolute">
+						<img src="/img/haijin/user_phone.png"/>
+						<span class="phone-text">***********</span>
+					</div>
+					授权同步开通海金中心账号
+				</div>
+			</div>
+			<div> 
+				<div class="btn check" >
+					授权并登录
+				</div>
+				
+			</div>
+			<div id="img-check"><img style="width: 14px;" src="/img/haijin/check.png"/><img class="hide"  style="width: 14px;" src="/img/haijin/uncheck.png"/>
+			 <span style="vertical-align: -2px;">我已阅读并同意<a href="agreement.html" style="text-decoration: underline;color:blue;">《个人会员服务协议》</a></span></div>
+		</div>
+		
+		<div class="footer">
+			<span >理财服务由亚联盟金融资产交易中心(海南)有限公司提供</span>
+		</div>
+	</body>
+</html>
+<script>
+var check = true;
+var haijin_token;
+var mobile; 
+$(function(){
+	if(!$.isLogin()){
+		window.location.href = '/view/account/login.html'+'?type=haijin';
+	}
+	mobile= JSON.parse($.cookie("user")).mobile;
+	var text_phone = mobile.substr(0, 3) + '****' + mobile.substr(7)
+	$(".phone-text").text(text_phone);
+	itouAuthorise();
+	$('#img-check  img').click(function(){	
+		$(this).addClass("hide").siblings("img").removeClass("hide");	
+		if(check == false){
+			check=true; 
+			/*$('.btn').removeClass("uncheck").addClass('check')*/;
+		}else{
+			check=false;
+			/*$('.btn').removeClass("check").addClass('uncheck');*/
+		}
+	})		
+	
+	
+	$('.btn').on("click",function(){
+		if(!$.isLogin()){
+			window.location.href = '/view/account/login.html'+'?type=haijin';
+		}
+		if(check){
+				doAuthorise();
+		}else{
+			$.phoneAlert("请阅读并同意《个人会员服务协议》",'提示');
+			return false;
+		}
+	})
+})
+
+
+function itouAuthorise(){
+		var mobile = JSON.parse($.cookie("user")).mobile;
+		var userId = JSON.parse($.cookie("user")).userId;
+		var access_token = JSON.parse($.cookie("user")).token;
+		$.ajax({
+			type:"POST",
+			url:"/api/haijin/paramEncrypt.do",
+			async:true,
+			data:{
+				'userId':userId,
+				'phone':mobile, 
+				'access_token':access_token,
+			},
+			dataType:'json',
+        	success:function(data){
+        		if(data.code == "0000"){
+        			haijin_token = data.data;
+        			
+        		}else{
+        			$.alert(data.message);
+        		}
+        	},
+        	error:function(error){
+        		console.log(error);
+        	}
+		});
+}
+
+function doAuthorise(){
+	var userId = JSON.parse($.cookie("user")).userId;
+	var access_token = JSON.parse($.cookie("user")).token;
+	$.ajax({
+			type:"POST",
+			url:"/api/haijin/doAuthorise.do",
+			async:true,
+			data:{
+				'userId':userId,
+				'channelCode':'0008',
+				'access_token':access_token , 				
+			},
+			dataType:'json',
+        	success:function(data){
+        		location.href="https://wap.haijin.hnafae.com/new_index.jsp?channel=0001&token="+haijin_token;
+        	},
+        	error:function(error){
+        		console.log(error);
+        	}
+	});
+}
+
+
+function backClick(){
+	location.href="/view/externalDocking/home.html";
+}
+</script>

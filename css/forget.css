@@ -1,0 +1,26 @@
+html,body{background:#f2f2f2;}
+.blue{color:#2b8fea;}
+.div-mobil-input{font-size: 12px;line-height: normal;}
+.div-input-group{border-radius: 5px;background: #fff;border: 1px solid #ccc;}
+.div-mobil-input input {width: 100%;border: 0px;background: #fff;font-size: 14px;padding:10px;border-radius: 5px;outline: none;}
+.div-mobil-input .img-code{height: 32px;position: absolute;margin-top: 5px}
+.div-mobil-input a{color:#64b4fb;margin-top: 2px; float: right;padding: 10px;}
+.div-btn{background: #dadada;text-align: center;font-size: 16px;color:#fff;padding: 15px; border-radius: 5px;width: 100%;line-height: 8px;}
+.div-btn{color: #fff;}
+.border-bottom{border-bottom: 1px solid #f0f4f7;}
+.help-block{position: relative;width: 85%; margin: 10px 0px 0px 0px;}
+.focus{
+	border:1px solid #2b8fea!important;
+}
+.font-size-14{font-size: 14px;}
+
+/*  忘记密码   */
+#userInfoForm .div-input-title{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 13px;
+	color: #535353;
+}
+#userInfoForm .col-xs-1 img{
+	cursor: pointer;
+}

@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f0f4f8;
+	/*background-color: #ffffff;*/
+}
+
+header,
+.cardInfo {
+	background: #ffffff;
+}
+
+header span {
+	color: #4a4a4a;
+}
+
+.nav_asset {
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+}
+
+.nav_asset>li {
+	width: 40%;
+	text-align: center;
+	line-height: 47px;
+	font-size: 15px;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+
+.record {
+	font-size: 14px;
+	position: absolute;
+	right: 10px;
+	text-decoration: none;
+	border:1px solid #2B8FEA;
+	border-radius: 4px;
+	height: 30px;
+	line-height: 30px;
+	margin:7px auto;
+	padding: 0 5px;
+	box-sizing: border-box;
+	color: #2B8FEA;
+}
+.record:link{
+	text-decoration: none;
+	color: #2B8FEA;
+}
+.record:visited{
+	text-decoration: none;
+}
+
+.asset-content {
+	width: 100%;
+}
+
+.tabActive {
+	border-bottom: 3px solid #409DF0;
+}
+
+.active {
+	display: block;
+}
+
+.item {
+	width: 100%;
+	background: #FFFFFF;
+	padding: 0px 10px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+.title {
+	width: 100%;
+	font-size: 16px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #dddddd;
+	line-height: 40px;
+}
+
+.title>span {
+	line-height: 44px;
+	color: #4A4A4A;
+	font-size: 15px;
+}
+
+.title>span:nth-child(2) {
+	color: #F64F1D;
+	font-size: 13px;
+}
+
+.item_list,
+.appointment_list {
+	width: 100%;
+	display: inline-flex;
+	padding-top: 10px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.assetInfo {
+	width: 100%;
+	display: none !important;}
+.item_list>li {
+	width: 50%;
+	padding: 2px 0;
+	font-size: 12px;
+	color: #9B9B9B;
+	line-height: 24px;
+}
+.item_list>.textRight{
+	text-align: right;
+}
+
+.item_list>li>span {
+	line-height: 20px;
+	font-size: 12px;
+	color: #4A4A4A;
+}
+
+.item_list>.redcolor {
+	color: #F64F1D;
+	font-size: 22px;
+}
+
+.time {
+	line-height: 40px;
+	font-size: 14px;
+	border-bottom: 1px solid #ddd
+}
+
+.appointment_list>li {
+	width: 70%;
+	font-size: 15px;
+	line-height: 20px;
+	padding: 5px 0;
+	color: #4A4A4A;
+	font-family: "微软雅黑";
+}
+
+.appointment_list>li:nth-last-child(1) {
+	width: 30%;
+	font-size: 13px;
+	text-align: right;
+}
+
+.appointment_list>li:nth-child(2) {
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+.noInfo{
+	width: 100%;
+	text-align: center;
+	background: #f0f4f8;
+	font-size: 16px;
+	color: #CCCCCC;
+	margin-top: 50%;
+}
+.success{
+	color: #4A4A4A !important;
+	}
+.fail{
+	color: #F64F1D !important;
+}

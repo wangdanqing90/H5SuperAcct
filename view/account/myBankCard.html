@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noarchive">
+<meta content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+<meta name="description" content="">
+<!--#include file = "/include/include.html" -->
+<link href="/css/style1.css"  rel="stylesheet" type="text/css">
+<link href="/css/account/accout.css" rel="stylesheet">
+<script language="javascript" src="/js/pages/account/mybankcard/myBankCard.js"></script>
+<title>我的银行卡</title>  
+ 
+</head>
+
+<body>
+
+<!--头部开始-->
+<header>
+	<em class="fl"><img id="backTo" src="/images/back_t.png"></em>
+	<span>我的银行卡</span>
+</header>
+<div style=" height:44px;"></div>
+<!--头部结束-->
+
+<!--我的银行卡开始-->
+<div class="bank_card">
+	<dl>
+    	<dt>开户名</dt>
+        <dd id="openBankName"></dd>
+    </dl>
+    <dl>
+    	<dt>银行卡号</dt>
+        <dd id="bankCardNo"></dd>
+        <input type="hidden" id="cardId" name="" value="">
+    </dl>
+    <dl>
+    	<dt>银行名称</dt>
+        <dd id="bankName"></dd>
+    </dl>
+    <dl>
+    	<dt>银行预留手机</dt>
+        <dd id="bankPhone"></dd>
+    </dl>
+   
+</div>
+<!--我的银行卡结束-->
+
+<div class="f_but"><input class="orange" name="" type="button" value="解绑" id="unbind_bank_card"></div>
+
+<!--提示弹框-->
+<div class="cover_bg" style=" padding-top:65%;display: none;">
+	<div class="ts_box">
+    	<dl>
+        	<dt>您确定要解除此银行卡？</dt>
+            <dd><a href="javascript:;" id="not_now">暂不</a></dd>
+            <dd><a href="javascript:;" onclick="unbindBankCard();">解除</a></dd>
+            <div class="clearfix"></div>
+        </dl>
+    </div>
+    
+</div>
+
+
+<!--提示弹框end-->
+
+</body>
+</html>

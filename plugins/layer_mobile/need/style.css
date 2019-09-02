@@ -1,0 +1,18 @@
+/* 新增弹框样式 ，可自行添加，注意重复类名    */
+/*.layui-m-layermain  背景颜色，如需灰背景可在对应的css文件中加样式，不要在公共里面加；*/ 
+/*
+ * Y : 表示对应的皮肤，可自行取名，防止重复即可; ps:  skin: 'Y',
+ * body .layui-m-layer .layui-m-layer-Y  整个弹窗
+ * 弹窗样式，可设定位置，宽度，
+ * .layui-m-layer-Y .layui-m-layercont  弹窗内容部分的样式
+ * .layui-m-layer-Y  .layui-m-layerbtn span[no]  关闭按钮样式
+ * .layui-m-layer-Y  .layui-m-layerbtn span[yes] 确认按钮样式
+ * .layui-m-layer-Y  .layui-m-layerbtn span 所有按钮样式
+ *  */
+/*.layui-m-layershade {background: none;} *//*背景默认设置没有*/
+.layui-m-layermain .layui-m-layersection{display: table-caption;margin: 120px auto;}
+body .layui-m-layer0 .layui-m-layer-sure{width: 300px;color: #007FEB;}
+body .layui-m-layer0 .layui-m-layer-sure{font-size: 14px;color: #707070;line-height: 25px;text-align: center;border-bottom: 1px solid #ddd;width: 280px;max-width: 80%;}
+.layui-m-layer-sure  .layui-m-layerbtn span{font-size: 15px;color: #007feb;display: block;text-align: center;}
+.layui-m-layer-sure .layui-m-layercont {padding: 16px 10px;font-size: 15px;letter-spacing: 1px;}
+.layui-m-layer-sure .layui-m-layerbtn {background-color: #fff;height: 40px;line-height:40px;letter-spacing: 1px;}

@@ -1,0 +1,15 @@
+html{background:#005bb1;}
+.login-body{background:#005bb1;padding: 20px;}
+.login-body .img-header{width: 40%}
+.login-body .div-content{padding: 40px;}
+.login-body .div-content .div-input{border-bottom: 1px solid #88b3d9;padding:5px 0px;overflow-y: auto;line-height: normal}
+.login-body .div-content .div-input >img{width:10%;float: left}
+.login-body .div-content .div-input >input{border: 0px;background: #005bb1;font-size: 18px;width: 80%;float: left;height: 36px;margin-left: 5%;color: #cae6ff;line-height: 36px;}
+.login-body .div-content .div-input >input::-webkit-input-placeholder{  color: #cae6ff; }
+.login-body .div-content .div-input >input::-moz-placeholder{  color: #cae6ff; }
+.login-body .div-content .div-input >input::-ms-input-placeholder{  color: #cae6ff; }
+.login-body .div-content a{color: #87b2d8}
+.login-body .btn-login{width: 100%;background: #fff;color: #007feb;padding: 10px;font-size: 16px;border-color: #fff;}
+.login-body .btn-register{width: 100%;background-color:#005bb1;border-color: #cae7ff;padding: 10px;font-size: 16px;color: #cae7ff }
+
+

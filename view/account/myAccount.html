@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <!--#include file = "/view/layout/head-script.html" -->
+    <link href="/css/externalDocking/myAccount.css" rel="stylesheet">
+    <!--<link href="/css/account/finance.css" rel="stylesheet">-->
+    <title>个人中心</title>
+</head>
+<style type="text/css">
+	.font-size-15{
+		font-size: 15px;
+	}
+	
+</style>
+<body>
+<!--ͷ头部开始 -->
+<header>
+    <em class="fl"><a href="javaScript:void(0)" id="backTo" onclick="backClick()"><img src="/img/externalDocking/back.png"></a></em>
+    <span id="headName">个人中心</span>
+   <!-- <input type="button" onclick="logout()" value="退出登录" class="logout"/>-->
+    <!-- <em class="fr"><img src="../../images/product/product/fx.png"></em>-->
+</header>
+<div style=" height:44px;"></div>
+<!-- 头部结束 -->
+<div id="phone">
+    <img src="/img/externalDocking/profile3.png" alt=""/>
+    <span class="sp font-size-15"></span>
+</div>
+
+<div class="row text-center white margin-0   item-list">
+	<div class="col-xs-6 padding-20 padding-bottom-10 border-left">
+		<a class="block" href="myAsset.html">
+			<img src="/img/externalDocking/icon-js.png" alt="" />
+			<p class="margin-top-10">券商资产</p>
+		</a>
+	</div>
+	<!--<div class="col-xs-4 padding-20 border-left">
+		<a class="block" href="javaScript:void(0);" onclick="skipZTB();">
+			<img src="/img/externalDocking/icon-hqb.png" alt="" />
+			<p class="margin-top-10">活期宝</p>
+		</a>
+	</div>-->
+	<div class="col-xs-6 padding-20 padding-bottom-10 border-left">
+		<a class="block" href="/view/externalDocking/home.html">
+			<img src="/img/externalDocking/icon-hzjg.png" alt="" />
+			<p class="margin-top-10">合作机构</p>
+		</a>
+	</div>			
+</div>
+
+
+
+<!-- 活期宝  -->
+<div class="margin-top-6 user-list white padding-left-15 font-size-14">
+	<p><a class="block" href="javaScript:void(0);" onclick="skipZTB();"> <img src="/img/externalDocking/icon-hqb2.png"/> <span class="font-size-15">活期宝</span> <span class="pull-right margin-right-16"> <span class="hqb-monely" style="vertical-align: middle;color: #9e9e9e;"></span> <img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>
+
+<!-- 我的渠道投资  -->
+<div class="margin-top-6 user-list white padding-left-15 font-size-14">
+	<p><a class="block" href="/view/account/userAccount/investRecord.html"> <img src="/img/externalDocking/icon-tzjl.png"/> <span class="font-size-15">我的渠道投资</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>
+<!-- 我的资产  -->
+<!--<div class="margin-top-6 user-list white padding-left-15 font-size-14 hide">
+	<p><a class="block" href="myAsset.html"> <span class="font-size-15">我的资产</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>-->
+<!-- 活期宝  -->
+<!--<div class="margin-top-6 user-list white padding-left-15 font-size-14">
+	<p><a class="block" href="resetPassword.html"> <span class="font-size-15">活期宝</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>-->
+
+<!-- 我的银行卡  -->
+<div class="margin-top-1 user-list white padding-left-15 font-size-14">
+	<p><a class="block" href="bankCard.html">  <img src="/img/externalDocking/icon-bank.png" style="width: 18px;"/>  <span class="font-size-15">我的银行卡</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>
+<!-- 安全中心 -->
+<div class="margin-top-6 user-list white padding-left-15 font-size-14">
+	<p><a class="block" href="safety.html"><img class="w-16" src="/img/externalDocking/icon-saft.png" alt=""  />  <span class="font-size-15">安全中心</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>
+<!-- 合作机构  -->
+<!--<div class="margin-top-6 user-list white padding-left-15 font-size-14 hide">
+	<p><a class="block" href="/view/externalDocking/home.html"> <span class="font-size-15">合作机构</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>-->
+
+
+
+<div class="margin-top-6 user-list white padding-left-15 font-size-14 hide">
+	<p><a class="block" href="resetPassword.html"> <span class="font-size-15">修改账户密码</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>
+<!--<div id="btn-setPayPassword" class="margin-top-6 user-list white padding-left-15 font-size-14">
+	<p><a class="block" href="setPayPassword.html"> <span class="font-size-15">设置交易密码</span> <span class="pull-right margin-right-10"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>
+<div id="btn-resetPayPass" class="margin-top-6 user-list white padding-left-15 font-size-14">
+	<p><a class="block" href="resetPayPassword.html"><span class="font-size-15">修改交易密码</span> <span class="pull-right margin-right-10"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>-->
+<!--<div  class=" user-list margin-top-6 white padding-left-15 font-size-14 ">
+	<p><a class="block" href="updatePhone.html"> <span class="font-size-15">修改手机号</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>-->
+
+
+
+<!--<div class="margin-top-6 user-list white padding-left-15 font-size-14 hide">
+	<p><a class="block" href="/view/account/fileUpload.html"> <span class="font-size-15">资料上传</span> <span class="pull-right margin-right-16"><img src="/img/businessPartner/icon-right.png"/></span></a></p>
+</div>-->
+
+<div class="login-out text-center">
+	<a href="javaScript:void(0) " onclick="logout(this)">退出登录</a>
+</div>
+ <!--产品展示 --  天金/itou/安金 -->
+<!--<ul id="myTab" class="nav nav-tabs">
+	<li class="active">
+		<a href="#tianJing" data-toggle="tianjin" onclick="find('tainjin')">天金所</a>
+	</li>
+	<li>
+		<a href="#iTou" data-toggle="itou" onclick="find('itou')">I投</a>
+	</li>
+	<li>
+		<a href="#anJin" data-toggle="anjin" onclick="find('anjin')">安金</a>
+	</li>
+</ul>
+<div id="myTabContent" class="tab-content">
+	<div class="tab-pane fade in active" id="tianJin" >
+		<div class="investment-Records" id="investmentRecords">
+		</div>
+	</div>
+	<div class="tab-pane fade" id="iTou" >
+		<div class="investment-Records" id="records-itou">
+		</div>
+	</div>
+	<div class="tab-pane fade" id="anJin">
+		<div class="investment-Records" id="records-anjin">
+		</div>
+	</div>
+</div>-->
+
+<!--<div class="main container">-->
+	<!--<div class="row">-->
+		 <!--<p id="recharge" class="recharge2 col-xs-12 col-xs-12">充值</p>-->
+   		 <!--<p id="forward" class="forward2 col-xs-12 col-xs-12">提现</p>-->
+	<!--</div>-->
+    <!-- -->
+<!--</div>-->
+
+
+
+<script language="javascript" src="/js/view/externalDocking/myAccount.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+*{margin: 0;padding: 0;}
+body{background-color: #f0f4f8;}
+.uhide{display: none;}
+.ushow{display: block;}
+.clearfloat:after{
+    content:".";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+
+/*未绑定客户经理号页面样式*/
+.manager{
+    background: #ffffff;
+    padding: 14px 16px 40px;
+}
+.manager h3{
+    margin: 0;
+    padding: 0 0 12px;
+    line-height: 22px;
+    font-size: 15px;
+    color: #000000;
+}
+.manager p{
+    font-size: 16px;
+    color: #007fec;
+    border: 2px solid #007fec;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 42px;
+    margin: 0 0 4px;
+}
+.manager .or{
+    height: 78px;
+    font-size: 12px;
+    line-height: 78px;
+    text-align: center;
+    background: url("/img/account/border.png") repeat-x left center;
+    background-size: 100%;
+}
+.tip{
+    margin-top: 13px;
+    padding: 0 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #707070;
+}
+/*已绑定客户经理显示页面样式*/
+.success{
+
+}
+.success-icon{
+    position: relative;
+
+}
+.success-icon span{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    margin-left: -35px;
+    background: #d8d8d8;
+}
+.success-icon span img{
+    width: 46px;
+    margin: 10px 12px;
+}
+.success-icon p:nth-of-type(1){
+    width: 100%;
+    font-size: 18px;
+    position: absolute;
+    top: 230px;
+    text-align: center;
+}
+.success-icon p:nth-of-type(2){
+    width: 100%;
+    font-size: 18px;
+    position: absolute;
+    top: 260px;
+    text-align: center;
+}
+.go-personal{
+    width: 100%;
+    position: fixed;
+    bottom: 46px;
+}
+.go-personal .end-btn{
+    line-height: 46px;
+    text-align: center;
+    font-size: 20px;
+}
+.tel{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.tel a{
+    color: #005bb1;
+    font-size: 15px;
+}
+
+/*弹窗*/
+.noLogin{width:100%;height:100%;position: absolute;top: 0;left: 0;margin: auto;background-color: rgba(000,000,000,0.5);}
+.tip-title{width:72%;height:160px;position: absolute;left:50%;margin-top:240px;margin-left: -36%;background-color: #ffffff;border-radius: 4px;}
+.tip-title .go-login{line-height: 60px;text-align: center;margin: 0;font-size: 16px;font-weight: bold;}
+.tip-title .fenpei{line-height: 22px;padding: 0 22px;text-align: center;font-size: 16px;}
+.tip-title .tip-btn{border-top: 1px solid #dddddd;}
+.tip-title .tip-btn p{width:50%;text-align: center;line-height:44px;float: left;color: #0080EC;font-size: 16px;}
+.tip-title .tip-btn p:nth-of-type(1){border-right: 1px solid #dddddd;}
+/*.tip-title .tip-btn #closeTip{color: #707070;}*/
+
+

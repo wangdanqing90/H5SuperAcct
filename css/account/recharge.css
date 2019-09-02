@@ -1,0 +1,127 @@
+/*
+    maybe----2018/4/27
+         充值，提现 CSS 
+ * 
+ * 
+ * */
+main>div{
+	width: 100%;
+	position: relative;
+	padding: 0 12px;
+}
+main div strong{
+	font-size: 14px;
+	line-height: 30px;
+}
+.bg-div{
+	width: 100%;
+	height: 14px;
+	background-color: #F0F4F8;
+}
+.bg-div2{
+	width: 100%;
+	height: 28px;
+	background-color: #F0F4F8;
+}
+main .amount div{
+	font-size: 14px;
+}
+main .amount span{
+	font-size: 26px;
+    color: #ff6643;
+    font-weight: bold;
+    line-height: 36px;
+    vertical-align: -2px;
+}
+main .bank img{
+	width: 24px;
+    height: 24px;
+}
+main .bank strong{
+	font-size: 16px;
+    line-height: 42px;
+    vertical-align: middle;
+    margin: 0 10px;
+} 
+main .recharge-amount{
+	line-height: 36px;
+    font-size: 16px;
+}
+main .recharge-amount input{
+	border-radius: 0;
+    height: 26px;
+    width: 50%;
+    margin: 0 6px 0 10%;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+main .bg-amount{	
+    height: 36px;
+    line-height: 26px;
+    color: #b6bfc7;
+	background-color: #F0F4F8;
+}
+main .bg-amount a{	
+    color: #76bcfb;
+}
+main .recharge-way{
+	height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    color: #707070;
+}
+main .agreement{
+	text-align: center;
+    line-height: 36px;
+    background-color: #F0F4F8;
+}
+main button{	
+    width: 100%;
+    line-height: 36px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 4px;    
+    background-color: #ff653a;
+}
+main .notice{
+	padding-top: 10px;
+    color: #707070;
+}
+/*验证短信*/
+
+.cover_bg{ background:rgba(0,0,0,.5); height:800px;position:fixed;z-index:9999;left:0;top:0;width:100%}
+.short_message{ background:#f0f4f7; height:69%; position:absolute; left:0; bottom:0; width:100%; }
+.short_message h2{ height:49px; line-height:49px; border-bottom:1px solid #ddd; margin:0 10px; color:#ddd}
+.short_message h2 span{ color:#333; font-size:18px; border-right:1px solid #ddd; padding-right:20px;}
+.short_message h2 label{ float:right; color:#a1acb5; font-size:14px;}
+.short_message h2 label a{ color:#68b5f8;} 
+.short_message h2 label em img{ width:17px; height:17px; vertical-align:-2px; margin-left:10px;}
+.short_message p{ color:#707070; font-size:14px; line-height:30px; margin:10px;}
+.short_message p i{ color:#333}
+.srk{ margin:10px; }
+.srk input[type="text"]{ height:43px; line-height:43px; border:1px solid #dddddd; border-radius:2px; float:left; width:57%; margin-right:2%; padding-left:2%}
+.srk input[type="button"]{height:45px; line-height:45px; border:1px solid #bbbbbb;border-radius:2px; font-size:15px; color:#fff; background:#d8d8d8; float:left; width:38%}
+.srk input.orange[type="button"]{ color:#fc6643; border:1px solid #fc6643; background:#ffede8;}
+.cz_but{ margin:10px;}
+.cz_but input{ background:#fc6643; font-size:18px; color:#fff; text-align:center; height:45px; line-height:45px; border-radius:4px; border:none; display:block; width:100%;}
+.error_tk{ background:rgba(0,0,0,.72); margin:50px; height:110px; border-radius:10px; position:absolute; z-index:22; top:15%; left:0; right:0}
+.error_tk p{ text-align:center; font-size:18px; color:#fff; line-height:110px; margin:0}
+.zccg p{ text-align:center; font-size:18px; color:#707070;}
+.zccg img{ display:block; margin:50px auto 20px;}
+.cz_but p{ line-height:25px;  font-size:14px; text-align:center; margin-bottom:10px;}
+.cz_but p a{ color:#0e82e8;}
+
+.agreement em{
+	background:url(/img/mchek.png) left center no-repeat; 
+	background-size:100%;
+	display:inline-block; 
+	width:16px; 
+	height:16px; 
+	margin-right:5px; 
+	vertical-align:-3px;
+}
+.agreement em.cur{background:url(/img/mchek_on.png) left center no-repeat; background-size:100%;}

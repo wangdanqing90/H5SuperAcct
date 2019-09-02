@@ -1,0 +1,66 @@
+header{
+    background: #ffffff;
+}
+header span{
+    color: #4a4a4a;
+}
+body{
+    background: #f5f5f5;
+}
+.ushow{
+    display: block;
+}
+.uhide{
+    display: none;
+}
+body{background: #f5f5f5;}
+.main{
+    background: url("/img/externalDocking/BG.png") no-repeat left top;
+    background-size:100%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main div{font-size: 13px;color:#ffffff;}
+.main div:nth-of-type(1){margin-top: 122px;margin-bottom: 16px;}
+.main div span{font-size: 13px;font-weight: bold;padding: 0 4px;}
+form{padding: 12px 24px;}
+form .get-msg{padding: 0px 0;display: flex;align-items: center;line-height: 32px;}
+form .get-msg .lable{margin-bottom: 0;margin-left: 4px;}
+form .auth-btn{margin:20px 0;background: #2b8fea;color: #ffffff;text-align: center;line-height: 44px;border-radius: 6px;}
+form .check-server{height:64px;margin-top: 88px;}
+form .check-server .lable2{font-size: 13px;color: #9d9d9d;}
+form .check-server .fontColor{color: #2b8fea;font-size: 13px;}
+
+.load{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+}
+.load-git{
+    width: 70%;
+    height: 60px;
+    background: rgba(000,000,000,0.9);
+    margin-top: 260px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.load-git img{
+    width: 32px;
+    height: 32px;
+}
+.load-git span{
+    font-size: 16px;
+    line-height: 60px;
+    padding-left: 20px;
+    color: #ffffff;
+}

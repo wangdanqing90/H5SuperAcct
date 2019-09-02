@@ -1,0 +1,64 @@
+/*
+ * Created by maybe on 2019/1/17
+ * 投资记录
+ */
+/* 证通资管投资记录  */
+#invest .ztzg-record{
+	padding: 16px;
+	margin-top: 1px !important;
+}
+#invest .item .ztzg{
+	font-size: 0;	
+}
+#invest .item .ztzg .red{
+	color: #f87c57!important;
+}
+#invest .item .ztzg>div{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#invest .item .ztzg>div:nth-child(1) img{
+	width: 44px;	
+	vertical-align: middle;
+}
+#invest .item .ztzg>div:nth-child(2){
+	width: calc(100% - 44px);
+    padding-left: 13px;
+}
+#invest .item .ztzg p{
+	margin-bottom: 0px;
+}
+#invest .item .ztzg p:nth-child(1){
+	margin-bottom: 12px;
+}
+#invest .item .ztzg span{
+	font-size: 16px;
+	vertical-align: middle;
+}
+#invest .item .ztzg .ztzg-title{
+	font-size: 15px;
+	color:#4A4A4A;;
+}
+#invest .item .ztzg  .ztzg-time{
+	font-size: 13px;
+	color: #9B9B9B;
+	line-height: 17px;
+}
+#invest .item .ztzg .black{
+	font-size: 13px;
+	color: #4A4A4A;
+}
+/* 安金和i投的样式重构 */
+#invest .itou_list .content .principal{
+	width: 35%;
+}
+#invest .itou_list .content .rofit{
+	width: 40%;
+	
+}
+#invest .itou_list .content .line{
+	left: 32%;
+}
+#invest .itou_list .content .pro-status{width: auto; position: absolute;top: 10%; right: 0; font-size: 16px;color: #767676;opacity: 0.6;	}
+#invest .itou_list .content .left-73{left: 73%;}

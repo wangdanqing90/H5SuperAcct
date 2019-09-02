@@ -1,0 +1,43 @@
+header {background: white;}
+header span {color: black;}
+header{border-bottom: solid 1px #dddcdc;}
+header a img {width: 10px;}
+/*.resetBody{background-color:  #f2f2f2;}
+.iteminput{position: relative;}
+.iloginform input{width:100%;height:45px;line-height:45px;font-size:15px;padding:0 10px 0 40px;background-color:white;color:black;border: solid 1px #bdbdbd; }
+.item-icon{text-align: center;margin: 20px 0;}
+.item-icon img{width:60%;margin: 20px 0;}
+#pic{ position: absolute;bottom: 0;right: 0;width: 110px;border-left:solid 1px #bdbdbd;margin: 5px 0 5px 0px; padding:0 5px 0 10px;}
+.userImg{ position: absolute;top: 16px;left: 15px;width:13px;}
+.keyImg{ position: absolute;top: 60px;left: 15px;width:13px;}
+.yzcodeImg{ position: absolute;top: 106px;left: 15px;width:13px;}
+#PswImg{ position: absolute;top: 58px;right: 10px;width:20px;}
+#loginButton {padding: 0 0;border: none;border-radius: 6px;font-size: 16px;height: 40px;width: 100%;color:white;font-weight: bold;margin:20px 0 0 0;}
+.bg-blue {background-color: #00205b;}
+.bg-grey {background-color: #dddddd;}*/
+
+
+.resetBody{background-color:  #f2f2f2;}
+.iteminput{position: relative;}
+.center{text-align: center;}
+#loginButton {padding: 0 0;border: none;border-radius: 6px;font-size: 16px;height: 40px;width: 100%;color:white;font-weight: bold;margin:20px 0 0 0;}
+.bg-blue {background-color: #00205b;}
+.bg-grey {background-color: #dddddd;}
+
+.div-register{padding: 0px 30px;}
+.div-register .input-register{height:auto}
+#checkCode_pic img{width: 100%;height: 40px;}
+.div-register .btn-orange[disabled]{color:#ff8461;border-color: #ccc;}
+.div-register a{color: #0877c5}
+
+
+.div-mobil-input{font-size: 12px;}
+.div-input-group{border-radius: 5px;background: #fff;border: 1px solid #ccc;}
+.div-mobil-input input {width: 100%;border: 0px;background: #fff;font-size: 12px;padding:10px;border-radius: 5px;}
+.div-mobil-input .img-code{height: 32px;position: absolute;margin-top: 5px}
+.div-mobil-input a{color:#64b4fb;margin-top: 2px; float: right;padding: 10px;}
+.div-btn{background: #00205b;text-align: center;font-size: 16px;color:#fff;padding: 10px; border-radius: 5px;width: 100%}
+.help-block{position: absolute;width: 85%;}
+.focus{
+	border:1px solid #f0f4f7!important;
+}

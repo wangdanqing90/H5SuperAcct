@@ -1,0 +1,122 @@
+body{
+    background-color: #f0f4f7;
+}
+.uhide{display: none;}
+.ushow{display: block;}
+.clearfloat:after{
+    content:".";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+
+
+.header span:nth-of-type(1){
+    width:25%;
+    float: left;
+    text-align: left;
+}
+.header span:nth-of-type(1) img{
+    width:20px;
+}
+.header span:nth-of-type(2){
+    width:50%;
+    float: left;
+}
+.header span:nth-of-type(3){
+    width:25%;
+    font-size: 14px;
+    float: right;
+    text-align: right;
+}
+
+.main{margin-top: 44px;}
+.search{
+    height: 44px;
+    padding: 0 16px;
+    background: #ffffff;
+}
+.search span:nth-of-type(1){
+    height: 44px;
+    line-height: 44px;
+    float: left;
+    color: #000000;
+}
+.search span:nth-of-type(2){
+    float: right;
+    color: #0078e0;
+    padding: 4px 16px;
+    margin-top: 10px;
+    border: 1px solid #0078e0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+}
+.item{
+
+}
+.month{
+    margin: 0;
+    padding: 0 0 0 16px;
+    font-size: 12px;
+    line-height: 28px;
+    color: #707070;
+}
+.data-item{
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    padding: 0 16px;
+}
+.data-item:last-child{
+    border-bottom: none;
+}
+.title{
+    padding: 16px 0 8px 0;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    margin: 0;
+}
+.title span:nth-of-type(1){
+    float: left;
+}
+.title span:nth-of-type(2){
+    float: right;
+}
+.date-status{
+    margin: 0;
+
+}
+.date-status span:nth-of-type(1){
+    float: left;
+    color: #707070;
+    font-size: 10px;
+    padding: 6px 0 16px 0;
+}
+.date-status span:nth-of-type(2){
+    float: right;
+    font-size: 12px;
+}
+.color-yellow{
+    color: #ff6643;
+}
+.color-black{
+    color: #000;
+}
+.color-grey{
+    color: #a5a5a5;
+}
+.date-status-bg{
+    width: 42px;
+    height: 16px;
+    text-align: right;
+    background: url("/img/account/fail.png") left top no-repeat;
+    /*background-repeat: no-repeat;*/
+    /*background-position: left -30px top;*/
+    background-size: 14px;
+}
+
+

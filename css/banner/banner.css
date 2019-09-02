@@ -1,0 +1,27 @@
+.banner{
+	height: 206px;
+	position: relative;
+}
+.banner #div-owl{
+	position: relative;
+}
+ .banner .ban-login{
+	position: absolute;
+    z-index: 2;
+    right: 30px;
+    top: 20px;
+    vertical-align: text-bottom;
+    color: #fff;
+    background-color: #727171;
+    padding: 4px;
+    border-radius: 12px;
+}
+.banner .ban-login img{
+	width: 14px;
+    vertical-align: text-bottom;
+}
+.banner .ban-login a{
+	margin-left: 4px;
+    margin-right: 2px;
+    color: #fff;
+}

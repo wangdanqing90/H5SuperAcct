@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <!--#include file = "/view/layout/head-script.html" -->
+    <link href="/css/tianjin/authorization.css" rel="stylesheet">
+    <title>确认授权</title>
+</head>
+<style>
+	form img{
+		width: 16px;
+		vertical-align: -2px;
+	}
+</style>
+<body>
+<!--ͷ头部开始 -->
+<header>
+    <em class="fl"><a  id="backTo" onclick="backClick()"><img src="/img/externalDocking/back.png"></a></em>
+    <span id="headName">确认授权</span>
+    <!-- <em class="fr"><img src="../../images/product/product/fx.png"></em>-->
+</header>
+<div style=" height:44px;"></div>
+<!-- 头部结束 -->
+
+<div class="main">
+    <div>该服务由<span>中民超级会员</span>提供</div>
+    <div>向其提供以下权限即可继续操作</div>
+</div>
+
+<form>
+    <div class="get-msg">
+       <!-- <input type="checkbox" name="getMsg" checked id="msg" />-->
+         <img id="msg" class="active" src="/img/externalDocking/checked-2.png"/>
+        <span class="lable"><b>·</b>&nbsp;获取你的公开信息(昵称、头像、性别等)</span>
+    </div>
+    <div class="get-msg">
+       <!-- <input type="checkbox" name="getCard" checked id="card" />-->
+         <img id="card" class="active" src="/img/externalDocking/checked-2.png"/>
+        <span class="lable"><b>·</b>&nbsp;使用身份信息(姓名、手机号、证件号)办理业务</span>
+    </div>
+    <div class="check-server">
+       <!-- <input type="checkbox" name="getSercer" checked id="server" />-->
+        <img id="server" class="active" src="/img/externalDocking/checked-2.png"/>
+        <span class="lable2">勾选即表示同意</span><br /><br />
+        <span class="fontColor" onclick="intoAgreement('server')">《天金所服务协议(个人会员版本)》</span>
+        <span class="fontColor" onclick="intoAgreement('risk')">《风险揭示书》</span>
+    </div>
+    <div class="auth-btn" id="authorization">同意</div>
+</form>
+
+<div id="load_box" class="uhide">
+<div class="load" id="load">
+    <div class="load-git">
+        <img src="/img/externalDocking/loading.gif" alt=""/>
+        <span>正在跳转至天金所...</span>
+    </div>
+</div>
+</div>
+<script language="javascript" src="/js/view/tianjin/authorization.js"></script>
+</body>
+</html>

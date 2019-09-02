@@ -1,0 +1,94 @@
+<!-- 页面用于各个渠道首次进入的页面 用于授权 -->
+
+<!doctype html>
+<html>
+<head lang="en">
+    <!--#include file = "/view/layout/head-script.html" -->
+    <link href="/css/externalDocking/home.css" rel="stylesheet">
+    <script language="javascript" src="/js/view/externalDocking/home.js"></script>
+    <title>超级账户</title>
+</head>	
+	
+
+<body>
+<!--头部开始-->
+<header>
+    <!--<em class="fl"><a  id="backTo" "><img src="/img/externalDocking/back.png"></a></em>-->
+    <span id="headName">超级账户</span>
+</header>
+<div style=" height:44px;"></div>
+<!--头部结束-->
+
+<script>
+// 各个渠道的信息记录
+var channel;
+var Url = $.getUrlParam();
+var param  =Url.token;
+	channel = Url.channel;
+if(channel == undefined || channel == null){
+	channel = '0000';
+}
+var  options={
+	list:"/view/tianjin/externalDocking/productList.html",
+	account:"/view/account/myAccount.html",
+}
+var blackUrl = Url.blackUrl; // 渠道返回url
+$.cookie("channelBlackUrl",blackUrl, {path: "/"});
+// param 从url上获取，每个渠道带来的信息
+//param = "NPmQExcmk1fVRLSMKunZSILSL36g0H8/LtLjJZIJvZyMamOP5nKvfCGyLtVEQVawsdmdetQxMmRhDzfsoQ9hNApANtOuUPeN8HQ3DZi64nhkOwesD1qh5ctTimrDp4qSdpelpWpE0X43nNBtzQ0RDIMEEeuzsGp+7F29p5mZcxI=#0000";
+//10.17.5.162/index.html?token=Ny7zKxn6tbqvnKxdcVQmFJrYFcDv2LQNrkjuzOizLxxpsl75/uBq5h6rS05bZPIcYeAxubBA9X2xviReytvuyaV6FAHnlDARY/tfdkEwMzKfIBYC5b11ORT3i9ZDG72Q6KYda+m/O9BWY8v2kJoLDfzfD95TOAw2iSqAhM0Z4pk=&blackUrl="account"&target=login&channel=0000
+checkSource();
+function checkSource(){	
+	$.loading();
+	$.ajax({
+		url:'api/user/appointLogin.do',
+		type:'post',
+		data:{
+			token:param,
+			channelCode:channel,
+		},
+		dataType:'json',
+		success:function(data){			 
+			if(data.code =="0000"){	
+				var target = data.target;
+				data = JSON.stringify(data);
+				$.initCookie(data);
+//				数据存取下来
+				target = target =="null" ?"account":target;
+				var url  = options[target];
+				layer.open({
+		            content: "授权成功",
+		            skin: 'sure',
+		            time: 2,
+		            end:function(){
+		            	location.href=url
+		            }
+	       		});
+			}else{
+				layer.open({
+		            content: "授权失败",
+		            skin: 'sure',
+		            time: 2,
+		            end:function(){
+		            window.location.href = blackUrl;
+		            }
+	       		});
+			}
+		},
+		error:function(error){			
+			layer.open({
+		            content: "网络忙，请稍后重试",
+		            skin: 'sure',
+		            time: 2,
+		            end:function(){
+		            	location.href = blackUrl;
+		            }
+	       		});
+		}
+		
+	})
+}
+ 	
+</script>
+</body>
+</html>

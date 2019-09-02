@@ -1,0 +1,132 @@
+.bg-line{
+	width: 100%;
+	height: 10px;
+	background-color: #f0f4f7;
+}
+/*公告*/
+.notice {
+	padding: 4px 20px;
+}
+.notice img{
+	height: 20px;
+    vertical-align: middle;
+}
+.notice strong{
+	vertical-align: middle;
+	display: inline-block;
+    width: 86%;
+    padding: 8px 0 8px 10px;
+}
+/*安全保障，专业信任，稳健收益*/
+.advantage{
+	width: 100%;
+	padding: 20px 0 10px;
+}
+.advantage ul{
+	padding: 0;
+}
+.advantage ul li{
+	display: inline-block;
+	width: 32%;
+	text-align: center;	
+}
+.advantage ul li:nth-child(1) img{
+	width: 36%;
+}
+.advantage ul li:nth-child(2) img{
+	width: 30%;
+}
+.advantage ul li:nth-child(3) img{
+	width: 34%;
+}
+.advantage ul li strong{
+	font-size: 16px;
+    line-height: 36px;
+}
+.advantage ul li p{
+	font-size: 14px;
+    color: #a7b1b9;
+    margin-bottom: 5px;
+}
+/*查看全部理财*/
+.All-product{
+	text-align: center;
+    width: 100%;
+    line-height: 40px;
+    border-top: 1px solid #e2e2e2;
+}
+.All-product a{
+	color: #9d9d9d;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+/*网站简介--index*/
+.abstract .title{
+	font-size: 18px;
+    line-height: 40px;
+    padding-left: 20px;    
+}
+.abstract ul{
+	padding: 0;
+}
+.abstract ul li{
+	width: 100%;
+	position: relative;
+	padding: 10px 0 10px;
+	border-top: 1px solid #e2e2e2; 
+	
+}
+.abstract ul li>div{
+	display: inline-block;
+	vertical-align: middle;
+}
+.abstract ul li .left{
+	width: 40%;	
+}
+.abstract ul li .left img{
+	width: 80%;
+	margin-left: 10%;	
+}
+.abstract ul li .right{
+	width: 59%;
+}
+.abstract .right .small-title{
+	position: relative;
+	font-size: 18px;
+    line-height: 20px;
+    padding: 9px 14px 5px
+}
+.abstract .right .small-title em{
+	position: absolute;
+	width: 2px;
+	height: 15px;
+	left: 0;
+	top: 12px;
+	background-color:#ff653a;
+}
+.abstract .right p{
+	font-size: 14px;
+    color: #7a7a7a;
+    line-height: 18px;
+    letter-spacing: 1px;   
+}
+/*立即注册*/
+.register{
+	text-align: center;
+    background-color: #f0f4f7;
+}
+
+.register button{
+	outline:none;	
+	width: 80%;	
+	margin: 16px auto;	
+    border: none;
+    border-radius: 4px;
+    background-color: #007feb;      
+}
+.register button a{
+	color: #fff;
+    font-size: 17px;
+    letter-spacing: 2px;
+	line-height: 33px;	
+}

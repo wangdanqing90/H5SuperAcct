@@ -1,0 +1,28 @@
+body{background-color: #f0f4f8;}
+.uhide{display: none;}
+.ushow{display: block;}
+.clearfloat:after{
+    content:".";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+.main{
+    margin: 0;
+    padding: 0;
+}
+.introduce{
+    background: #ffffff;
+}
+
+.introduce h2{
+    padding: 0 18px;
+    margin: 0;
+    line-height: 50px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    border-bottom: 1px solid #dddddd;
+}

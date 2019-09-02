@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <!--#include file = "/view/layout/head-script.html" -->
+    <link href="/css/externalDocking/myAccount.css" rel="stylesheet">
+    <!--<link href="/css/account/finance.css" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="/plugins/mescroll/mescroll.min.css"/>
+    <link rel="stylesheet" href="/css/account/invesRecord.css" />
+    <title>天金所投资记录</title>
+</head>
+<style type="text/css">
+	.opacity{
+        -webkit-animation: opacity 0.3s linear;
+        animation: opacity 0.3s linear;
+    }
+    @-webkit-keyframes opacity {
+        0% {
+            opacity:0;
+        }
+        100% {
+            opacity:1;
+        }
+    }
+    @keyframes opacity {
+        0% {
+            opacity:0;
+        }
+        100% {
+            opacity:1;
+        }
+    }
+</style>
+<body>
+
+	<header>
+	    <em class="fl"><a href="javaScript:void(0);" id="backTo" onclick="backClick();"><img src="/img/externalDocking/back.png"></a></em>
+	    <span id="headName">天金所投资记录</span> 
+	</header>
+	<div style=" height:44px;"></div>
+	
+	<div class="mescroll" id="mescroll">
+		<div class="investment-Records  margin-top-10" id="invest">
+		<h3 class="title">投资记录</h3>
+			<!--
+			<div class="item itou_list">
+				<h4>长期募集测试产品0629</h4>
+				<div class="item-content">
+					<div class="content">
+					     <div class="principal">
+							<p>100</p><p>预计收益
+							</p>
+					     </div>
+						<div class="line"></div>
+						<div class="rofit padding-left-0">
+								<p>100,000,000</p><p>投资本金（元）</p>
+						</div>
+						<div class="line"></div>
+						<div class="pro-status">
+							<span>申请中</span>
+						</div>
+					</div>
+					<div class="date">
+							<img src="/img/externalDocking/time@2x.png" alt="" /><span>预期产品到期日: 2018/07/20</span>
+					</div>
+				</div>
+			</div>-->
+			<!--<div class="item">
+				<h4>长期募集测试产品0629</h4>
+				<div class="item-content">
+					<div class="content">
+					     <div class="principal">
+							<p>100</p><p>预计收益
+							</p>
+					     </div>
+						<div class="line"></div>
+						<div class="rofit">
+								<p>0.24</p><p>投资本金（元）</p>
+						</div>
+					</div>
+					<div class="date">
+							<img src="/img/externalDocking/time@2x.png" alt="" /><span>预期产品到期日: 2018/07/20</span>
+					</div>
+				</div>
+			</div>-->
+			
+			<!--<div class="item ztzg-record">
+				<div class="ztzg">
+					<div>
+						<img src="../../../img/account/icon-buy.png" alt="" />
+					</div>
+					<div>
+						<p>
+							<span class="ztzg-title">
+								曾经的曾今
+							</span>
+							<span class="pull-right ztzg-title">22 </span>
+						</p>
+						<p>
+							<span class="ztzg-time">
+								1111
+							</span>
+							<span class="pull-right black"> 22</span>
+						</p>
+					</div>
+				</div>
+			</div>-->
+		</div>		
+	</div>	
+	<script src="/plugins/mescroll/mescroll.min.js"></script>
+	<script src="/js/view/account/userAccount/detail.js"></script>
+</body>
+</html>
